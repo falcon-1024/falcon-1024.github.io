@@ -17,11 +17,283 @@
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  color: black;
+  background: white
 }
+
+.font-light {
+  font-weight: 300;
+}
+
+
+.section {
+  height: 100vh;
+  background-color: #f0f0f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav {
+  position: fixed;
+  background-color: #0c6ebe; /* Adjust background color as needed */
+  z-index: 1000; /* Ensure the navbar stays on top of other elements */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  top: 0;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-large;
+  color: rgb(252, 252, 252);
+  transition: background-color 0.3s ease;
+  display: flex;
+  overflow-x: hidden;
+}
+
+
+ul {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end; /* Adjust as needed */
+  align-items: center; /* Center items vertically */
+  padding: 0; /* Remove default padding */
+  margin: 0; /* Remove default margin */
+  width: 100%;
+}
+
+li {
+  cursor: pointer;
+}
+
+.navbar-options {
+  font-size: 20px;
+  line-height: 1.42857143;
+  color: #ffffff;
+  font-family: 'Courier New', Courier, monospace;
+  visibility: visible!important;
+  box-sizing: border-box;
+  padding-left: 10;
+  text-transform: uppercase;
+  list-style: none;
+  margin: 0;
+  float: right!important;
+  margin-right: 30px;
+}
+
+.active {
+  line-height: 1.42857143;
+  color: #ffffff;
+  font-family: 'Courier New', Courier, monospace;
+  visibility: visible!important;
+  box-sizing: border-box;
+  text-transform: uppercase;
+  padding-left: 10;
+  list-style: none;
+  margin: 0;
+  float: right!important;
+  margin-right: 30px;
+  align-items: center;
+}
+
+.name {
+  box-sizing: border-box;
+  background-color: transparent;
+  text-decoration: none;
+  transition: all .35s;
+  cursor: default;
+  float: left;
+  height: 50px;
+  padding: 15px 15px;
+  font-size: 25px;
+  line-height: 20px;
+  margin-left: 15px;
+  width: 10%;
+  text-transform: uppercase;
+  font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.home {
+  height: 100vh;
+  background-image: url('../../public/computerScienceMap.jpg');
+  background-size: 100% 100%;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  color: white;
+}
+
+.home::before {
+  content: '';
+  position: absolute;
+  top: -1;
+  left: -1;
+  width: 100%;
+  height: 102%;
+  background-image: inherit;
+  background-size: 100% 100%;
+  background-position: center;
+  filter: blur(4px);
+}
+
+.home-content {
+  font-family: 'Courier New', Courier, monospace;
+  font-style: normal;
+  font-size: xx-large;
+  font-weight: 900;
+  color: #ffffff;
+  margin-top: 0;
+}
+
+/* .section {
+  height: 100vh;
+  background-color: #f0f0f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: blue;
+  transition: background-color 0.3s ease;
+}
+
+.ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+}
+
+.li {
+  flex-direction: column;
+  cursor: grab;
+}
+
+.active {
+  color: white; 
+  font-weight: bold;
+} 
+*/
+/* .navbar-default {
+  border-color: rgba(34,34,34,.05);
+  font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
+  background-color: #fff;
+  -webkit-transition: all .35s;
+  -moz-transition: all .35s;
+  transition: all .35s;
+}
+
+.navbar-default .navbar-header .navbar-brand {
+  text-transform: uppercase;
+  font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
+  font-weight: 700;
+  color: #f05f40;
+}
+
+.navbar-default .navbar-header .navbar-brand:hover,
+.navbar-default .navbar-header .navbar-brand:focus {
+  color: #eb3812;
+}
+
+.navbar-default .nav > li>a,
+.navbar-default .nav>li>a:focus {
+  text-transform: uppercase;
+  font-size: 13px;
+  font-weight: 700;
+  color: #222;
+}
+
+.navbar-default .nav > li>a:hover,
+.navbar-default .nav>li>a:focus:hover {
+  color: #f05f40;
+}
+
+.navbar-default .nav > li.active>a,
+.navbar-default .nav>li.active>a:focus {
+  color: #f05f40!important;
+  background-color: transparent;
+}
+
+.navbar-default .nav > li.active>a:hover,
+.navbar-default .nav>li.active>a:focus:hover {
+  background-color: transparent;
+}
+
+@media(min-width:768px) {
+  .navbar-default {
+      border-color: rgba(255,255,255,.3);
+      background-color: transparent;
+  }
+
+  .navbar-default .navbar-header .navbar-brand {
+      color: rgba(255,255,255,.7);
+  }
+
+  .navbar-default .navbar-header .navbar-brand:hover,
+  .navbar-default .navbar-header .navbar-brand:focus {
+      color: #fff;
+  }
+
+  .navbar-default .nav > li>a,
+  .navbar-default .nav>li>a:focus {
+      color: rgba(255,255,255,.7);
+  }
+
+  .navbar-default .nav > li>a:hover,
+  .navbar-default .nav>li>a:focus:hover {
+      color: #fff;
+  }
+
+  .navbar-default.affix {
+      border-color: rgba(34,34,34,.05);
+      background-color: #fff;
+  }
+
+  .navbar-default.affix .navbar-header .navbar-brand {
+      font-size: 14px;
+      color: #f05f40;
+  }
+
+  .navbar-default.affix .navbar-header .navbar-brand:hover,
+  .navbar-default.affix .navbar-header .navbar-brand:focus {
+      color: #eb3812;
+  }
+
+  .navbar-default.affix .nav > li>a,
+  .navbar-default.affix .nav>li>a:focus {
+      color: #222;
+  }
+
+  .navbar-default.affix .nav > li>a:hover,
+  .navbar-default.affix .nav>li>a:focus:hover {
+      color: #f05f40;
+  }
+} */
+
+/* -webkit-text-size-adjust: 100%;
+-webkit-tap-highlight-color: rgba(0,0,0,0);
+font-size: 14px;
+line-height: 1.42857143;
+color: #333;
+box-sizing: border-box;
+display: block;
+min-height: 50px;
+margin-bottom: 20px;
+border: 1px solid transparent;
+position: fixed;
+right: 0;
+left: 0;
+z-index: 1030;
+border-radius: 0;
+top: 0;
+border-width: 0 0 1px;
+font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
+transition: all .35s;
+border-color: rgba(255,255,255,.3);
+background-color: transparent; */
