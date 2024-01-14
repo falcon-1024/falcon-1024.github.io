@@ -18,13 +18,13 @@ const ContactMe = () => {
             <a href="https://github.com/falcon-1024"> GitHub</a>. Traverse the
             landscapes of my journey on
             <a href="https://www.linkedin.com/in/abhi--patel"> LinkedIn</a>.
-            Whether it's predicting patterns or exploring treks, let's conquer
-            challenges. Drop me a message at
+            Whether it&apos;s predicting patterns or exploring treks, let&apos;s
+            conquer challenges. Drop me a message at
             <a href="mailto:abhipatel5058@gmail.com">
               {" "}
               abhipatel5058@gmail.com
             </a>
-            . Together, let's analyze datasets and summit peaks, crafting
+            . Together, let&apos;s analyze datasets and summit peaks, crafting
             solutions both in the world of data and the great outdoors.
           </p>
         </div>

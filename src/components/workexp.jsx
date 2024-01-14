@@ -9,7 +9,7 @@ const WorkExperience = () => {
             href="https://www.accenture.com/in-en/about/company/india"
             className="education-photo"
           >
-            <img src="accenture-AI.jpg" className="img-responsive" alt="" />
+            <Image src="accenture-AI.jpg" className="img-responsive" alt="" />
             <div className="experience-text-overlay">
               <div className="education-text flex flex-row">
                 <div className="flex flex-col justify-evenly space-y-1.5 p-6 text-start w-[40%]">
@@ -58,7 +58,7 @@ const WorkExperience = () => {
             href="https://newsroom.accenture.com/news/2020/accenture-acquires-byte-prophecy-to-enhance-ai-and-digital-analytics-capabilities-in-emerging-markets"
             className="education-photo"
           >
-            <img src="byte-prophecy.jpg" className="img-responsive" alt="" />
+            <Image src="byte-prophecy.jpg" className="img-responsive" alt="" />
             <div className="experience-text-overlay">
               <div className="education-text flex flex-row">
                 <div className="flex flex-col justify-evenly space-y-1.5 p-6 text-start w-[40%]">
@@ -82,7 +82,7 @@ const WorkExperience = () => {
         </div>
         <div className="rounded-xl mt-9 overflow-hidden relative experience-card">
           <a href="" className="education-photo">
-            <img src="csir-iitr.jpg" className="img-responsive" alt="" />
+            <Image src="csir-iitr.jpg" className="img-responsive" alt="" />
             <div className="experience-text-overlay">
               <div className="education-text flex flex-row">
                 <div className="flex flex-col space-y-1.5 p-6 text-start w-[70%]">
@@ -94,7 +94,8 @@ const WorkExperience = () => {
                 </div>
                 <div className="p-6 pt-0 text-start justify-evenly">
                   <p className="text-base font-bold">
-                    Project: "ML Algorithm Selection for Toxicology Predictions"
+                    Project: &quot;ML Algorithm Selection for Toxicology
+                    Predictions&quot;
                   </p>
                   <br />
                   <p className="text-base">

@@ -73,7 +73,7 @@ const Project = () => {
 const Tro = ({ title, category, imageSrc, description }) => (
   <div className="rounded-xl m-3 overflow-hidden relative project-card portfolio-item">
     <a className="education-photo">
-      <img src={imageSrc} className="img-responsive" alt={title} />
+      <Image src={imageSrc} className="img-responsive" alt={title} />
       <div className="experience-text-overlay">
         <div className="education-text flex flex-row">
           <div className="flex flex-col justify-evenly space-y-1.5 p-6 text-center">
