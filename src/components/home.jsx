@@ -1,10 +1,8 @@
-import Image from "next/image";
-
 const Home = () => {
   return (
     <section id="home">
       <div className="relative flex items-center justify-center h-screen overflow-hidden">
-        <Image
+        <img
           className="flex bg-center scale-[1.01] blur-[7px] grayscale-[30%] h-screen w-screen object-cover"
           src="computerScienceMap.jpg"
         />

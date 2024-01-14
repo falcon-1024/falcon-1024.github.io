@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import projectsData from "@/data/projectData";
-import Image from "next/image";
 
 // // const dataPath = path.join(process.cwd(), "data", "projectsData.json");
 // const projectsData = JSON.parse(
@@ -74,7 +73,7 @@ const Project = () => {
 const Tro = ({ title, category, imageSrc, description }) => (
   <div className="rounded-xl m-3 overflow-hidden relative project-card portfolio-item">
     <a className="education-photo">
-      <Image src={imageSrc} className="img-responsive" alt={title} />
+      <img src={imageSrc} className="img-responsive" alt={title} />
       <div className="experience-text-overlay">
         <div className="education-text flex flex-row">
           <div className="flex flex-col justify-evenly space-y-1.5 p-6 text-center">

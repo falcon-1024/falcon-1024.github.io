@@ -1,7 +1,6 @@
 "use client";
 import { SetStateAction, useState } from 'react';
 // import Head from 'next/head';
-import Image from "next/image";
 import {IntroC} from '@/components/intro'
 import {HeaderC} from '@/components/header'
 import Navbar from '@/components/navbar'
@@ -19,8 +18,13 @@ const IndexPage = () => {
 
   const scrollToSection = (section: string) => {
     const element = document.getElementById(section);
-    element.scrollIntoView({behavior: 'smooth' });
-    setActiveSection(section);
+    if (element==null) {
+      
+    }
+    else {
+      element.scrollIntoView({behavior: 'smooth' });
+      setActiveSection(section);
+    }
   };
 
   return (
