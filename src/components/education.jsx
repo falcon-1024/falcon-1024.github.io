@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 const Education = () => {
   return (
     <section id="education" className="section">
@@ -6,7 +8,7 @@ const Education = () => {
         <hr className="primary left-0 right-0 m-auto" />
         <div className="education-card rounded-xl mt-20 overflow-hidden relative">
           <a href="https://www.uwindsor.ca/" className="education-photo">
-            <img
+            <Image
               src="university-of-windsor.jpg"
               className="img-responsive"
               alt=""
@@ -35,7 +37,7 @@ const Education = () => {
         </div>
         <div className="education-card rounded-xl mt-20 overflow-hidden relative">
           <a href="https://ahduni.edu.in/" className="education-photo">
-            <img
+            <Image
               src="ahmedabad-university-1.jpg"
               className="img-responsive"
               alt=""
