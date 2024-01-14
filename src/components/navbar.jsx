@@ -1,12 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 
-const visible_section_name = [
-  "about",
-  "experience",
-  "projects",
-  "skills",
-  "contact",
-];
+const visible_section_name = ["education", "experience", "projects", "contact"];
 
 const Navbar = ({ sections, onSectionClick }) => {
   const [activeSection, setActiveSection] = useState(sections[0]);
