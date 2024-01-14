@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import projectsData from "@/data/projectData";
+import Image from "next/image";
 
 // // const dataPath = path.join(process.cwd(), "data", "projectsData.json");
 // const projectsData = JSON.parse(

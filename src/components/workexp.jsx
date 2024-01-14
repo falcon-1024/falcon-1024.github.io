@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 const WorkExperience = () => {
   return (
     <section id="work-exp" className="section">
