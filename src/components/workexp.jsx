@@ -6,10 +6,7 @@ const WorkExperience = () => {
         <h3 className="section-heading"> EXPERIENCE </h3>
         <hr className="primary left-0 right-0 m-auto" />
         <div className="rounded-xl mt-9 overflow-hidden relative experience-card">
-          <a
-            href="https://www.accenture.com/in-en/about/company/india"
-            className="education-photo"
-          >
+          <div className="education-photo">
             <img src="accenture-AI.jpg" className="img-responsive" alt="" />
             <div className="experience-text-overlay">
               <div className="education-text flex flex-row">
@@ -17,9 +14,12 @@ const WorkExperience = () => {
                   <p className="font-semibold leading-none tracking-wide text-2xl">
                     Data Engineering Analyst
                   </p>
-                  <p className="text-base p-2">
+                  <a
+                    href="https://www.accenture.com/in-en/about/company/india"
+                    className="text-base p-2 text-white italic"
+                  >
                     - Accenture Solutions Pvt. Ltd.
-                  </p>
+                  </a>
                   <p className="text-base text-left">• May 2020 - Jul 2022</p>
                 </div>
                 <div className="p-6 pt-0 justify-evenly">
@@ -52,13 +52,10 @@ const WorkExperience = () => {
                 </div>
               </div>
             </div>
-          </a>
+          </div>
         </div>
         <div className="rounded-xl mt-9 overflow-hidden relative experience-card">
-          <a
-            href="https://newsroom.accenture.com/news/2020/accenture-acquires-byte-prophecy-to-enhance-ai-and-digital-analytics-capabilities-in-emerging-markets"
-            className="education-photo"
-          >
+          <div className="education-photo">
             <img src="byte-prophecy.jpg" className="img-responsive" alt="" />
             <div className="experience-text-overlay">
               <div className="education-text flex flex-row">
@@ -66,7 +63,12 @@ const WorkExperience = () => {
                   <p className="font-semibold leading-none tracking-wide text-2xl">
                     Data Engineering Intern
                   </p>
-                  <p className="text-base p-2">- Byte Prophecy Pvt. Ltd.</p>
+                  <a
+                    href="https://newsroom.accenture.com/news/2020/accenture-acquires-byte-prophecy-to-enhance-ai-and-digital-analytics-capabilities-in-emerging-markets"
+                    className="text-base p-2 text-white italic"
+                  >
+                    - Byte Prophecy Pvt. Ltd.
+                  </a>
                   <p className="text-base text-left">• Dec 2019 - May 2020</p>
                 </div>
                 <div className="p-6 pt-0">
@@ -79,10 +81,10 @@ const WorkExperience = () => {
                 </div>
               </div>
             </div>
-          </a>
+          </div>
         </div>
         <div className="rounded-xl mt-9 overflow-hidden relative experience-card">
-          <a href="" className="education-photo">
+          <div className="education-photo">
             <img src="csir-iitr.jpg" className="img-responsive" alt="" />
             <div className="experience-text-overlay">
               <div className="education-text flex flex-row">
@@ -90,7 +92,12 @@ const WorkExperience = () => {
                   <p className="font-semibold leading-none tracking-wide text-2xl">
                     Machine Learning Research Intern
                   </p>
-                  <p className="text-base p-2">- CSIR - IITR</p>
+                  <a
+                    href="http://iitrindia.org/en/index.aspx"
+                    className="text-base p-2 text-white italic"
+                  >
+                    - CSIR - IITR
+                  </a>
                   <p className="text-base bottom-4">• Jun 2019 - Jul 2019</p>
                 </div>
                 <div className="p-6 pt-0 text-start justify-evenly">
@@ -111,7 +118,7 @@ const WorkExperience = () => {
                 </div>
               </div>
             </div>
-          </a>
+          </div>
         </div>
       </div>
     </section>
