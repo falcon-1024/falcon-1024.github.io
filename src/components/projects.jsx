@@ -75,16 +75,12 @@ const Tro = ({ title, category, imageSrc, description }) => (
   <div className="rounded-xl m-3 overflow-hidden relative project-card portfolio-item">
     <div className="education-photo">
       <img src={imageSrc} className="img-responsive" alt={title} />
-      <div className="experience-text-overlay">
-        <div className="education-text flex flex-row">
-          <div className="flex flex-col justify-evenly space-y-1.5 p-6 text-center">
-            <p className="font-semibold leading-none tracking-wide text-2xl">
-              {title}
-            </p>
-            <br />
-            <p className="text-base p-2">{description}</p>
-          </div>
-        </div>
+      <div className="project-text-overlay space-y-1.5 p-6">
+        <p className="font-semibold leading-none tracking-wide text-2xl">
+          {title}
+        </p>
+        <br />
+        <p className="text-base p-2">{description}</p>
       </div>
     </div>
   </div>
