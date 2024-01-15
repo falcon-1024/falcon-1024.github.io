@@ -1,3 +1,4 @@
+"use client";
 const Skills = () => {
   return (
     <section id="skills" className="section">

@@ -1,3 +1,4 @@
+"use client";
 const WorkExperience = () => {
   return (
     <section id="work-exp" className="section">

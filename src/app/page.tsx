@@ -1,8 +1,6 @@
 "use client";
 import { SetStateAction, useState } from 'react';
 // import Head from 'next/head';
-import {IntroC} from '@/components/intro'
-import {HeaderC} from '@/components/header'
 import Navbar from '@/components/navbar'
 import Home from '@/components/home'
 import Education from '@/components/education'
