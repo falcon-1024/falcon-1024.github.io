@@ -26,7 +26,7 @@ const IndexPage = () => {
   };
 
   return (
-    <div>
+    <div className="dark">
       <Navbar sections={sections} onSectionClick={scrollToSection} />
       <Home />
       <Education />
