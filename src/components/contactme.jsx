@@ -14,8 +14,8 @@ const ContactMe = () => {
             CONTACT ME
           </h1>
         </div>
-        <div className="block relative flex-shrink-0 top-16 m-1.5 text-gray-600 w-3/4">
-          <h2 className="text-2xl md:text-5xl min-[2300px]:text-8xl font-extralight text-center mb-7">
+        <div className="block relative flex-shrink-0 top-16 m-1.5 text-gray-500 w-3/4">
+          <h2 className="text-xl md:text-3xl min-[2300px]:text-6xl font-extralight text-center mb-7">
             Hey there! Climb the peaks of data insights and mountain trails with
             me. Navigate through my coding exploits on
             <a className="italic" href="https://github.com/falcon-1024">
@@ -41,46 +41,43 @@ const ContactMe = () => {
           </h2>
           <br />
           <br />
-          <div className="flex flex-row">
-            <div className="ml-[25%] w-1/6 text-center">
+          <div className="grid flex-shrink-0 grid-cols-3">
+            <div className="text-center">
               <a
                 href="https://github.com/falcon-1024"
                 target="_blank"
-                className="w-[100px] bg-transparent"
+                className="bg-transparent"
                 rel="noopener noreferrer"
               >
                 <FontAwesomeIcon
                   icon={faGithub}
-                  size="3x"
-                  className="text-[#949494]"
+                  className="text-[#949494] text-3xl lg:text-5xl"
                 />
               </a>
             </div>
-            <div className="w-1/6 text-center">
+            <div className="text-center">
               <a
                 href="https://www.linkedin.com/in/abhi--patel"
                 target="_blank"
-                className="w-[100px] bg-transparent"
+                className="bg-transparent"
                 rel="noopener noreferrer"
               >
                 <FontAwesomeIcon
                   icon={faLinkedinIn}
-                  size="3x"
-                  className="text-[#949494]"
+                  className="text-[#949494] text-3xl lg:text-5xl"
                 />
               </a>
             </div>
-            <div className="w-1/6 text-center">
+            <div className="text-center">
               <a
                 href="mailto:abhipatel5058@gmail.com"
                 target="_blank"
-                className="w-[100px] bg-transparent"
+                className="bg-transparent"
                 rel="noopener noreferrer"
               >
                 <FontAwesomeIcon
                   icon={faEnvelope}
-                  size="3x"
-                  className="text-[#949494]"
+                  className="text-[#949494] text-3xl lg:text-5xl"
                 />
               </a>
             </div>
