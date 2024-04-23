@@ -5,18 +5,19 @@ const ProjectModal = ({ open, onClose }) => {
   if (!open.show) return null;
   const [showProj, setShowProj] = useState([]);
 
-  const findCurrentProj = () => {
+  // const findCurrentProj = () => {
+  //   let currentPrj = projectsData.filter((project) =>
+  //     project.title.includes(open.id)
+  //   );
+  //   setShowProj(currentPrj);
+  // };
+  useEffect(function findCurrentProj() {
+    // findCurrentProj();
     let currentPrj = projectsData.filter((project) =>
       project.title.includes(open.id)
     );
-    // console.log(currentPrj, "in current project");
     setShowProj(currentPrj);
-    // return currentPrj;
-  };
-
-  useEffect(() => {
-    findCurrentProj();
-  }, [open]);
+  });
 
   //   const currentCategories = Array.from(new Set(currentPrj.categories));
   return (
