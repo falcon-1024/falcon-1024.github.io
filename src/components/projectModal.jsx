@@ -2,22 +2,20 @@ import React, { useEffect, useState } from "react";
 import projectsData from "@/data/projectData";
 
 const ProjectModal = ({ open, onClose }) => {
-  if (!open.show) return null;
   const [showProj, setShowProj] = useState([]);
 
-  // const findCurrentProj = () => {
-  //   let currentPrj = projectsData.filter((project) =>
-  //     project.title.includes(open.id)
-  //   );
-  //   setShowProj(currentPrj);
-  // };
-  useEffect(function findCurrentProj() {
-    // findCurrentProj();
+  useEffect(() => {
+    findCurrentProj();
+  }, [open]);
+
+  const findCurrentProj = () => {
     let currentPrj = projectsData.filter((project) =>
       project.title.includes(open.id)
     );
     setShowProj(currentPrj);
-  });
+  };
+
+  if (!open.show) return null;
 
   //   const currentCategories = Array.from(new Set(currentPrj.categories));
   return (
@@ -41,8 +39,11 @@ const ProjectModal = ({ open, onClose }) => {
           </h5>
         </div>
         <div className="relative flex justify-center mb-2 lg:mb-3">
-          {showProj[0]?.categories.map((category) => (
-            <div className="border-2 text-sm rounded-lg px-3 py-1 mx-2 text-white">
+          {showProj[0]?.categories.map((category, idx) => (
+            <div
+              key={idx}
+              className="border-2 text-sm rounded-lg px-3 py-1 mx-2 text-white"
+            >
               {category}
             </div>
           ))}
