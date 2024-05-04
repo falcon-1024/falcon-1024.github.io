@@ -54,14 +54,14 @@ const ExperienceModal = ({ open, onClose }) => {
             alt=""
           />
         </div>
-        <div className="flex flex-col p-6 justify-center">
-          <p className="flex text-md md:text-xl min-[2300px]:text-5xl text-neutral-500 dark:text-neutral-100 w-5/6 lg:w-3/4 m-1">
+        <div className="grid grid-flow-row p-6 justify-center">
+          <p className="font-bold text-md md:text-xl min-[2300px]:text-5xl text-neutral-500 dark:text-neutral-100 m-1">
             Achievements:{" "}
           </p>
           {showExp?.responsibilities.map((res, idx) => (
             <p
               key={idx}
-              className="flex text-sm md:text-lg min-[2300px]:text-4xl text-neutral-500 dark:text-neutral-50 text-justify justify-center w-5/6 lg:w-3/4 m-1"
+              className="text-sm md:text-lg min-[2300px]:text-4xl text-neutral-500 text-justify px-[10%] dark:text-neutral-50  m-1"
             >
               • {res}
             </p>
