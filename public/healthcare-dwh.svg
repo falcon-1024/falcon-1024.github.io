@@ -1,0 +1,113 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 950" role="img" aria-labelledby="title desc">
+	<title id="title">Healthcare Data Warehouse</title>
+	<desc id="desc">Architecture diagram showing Azure landing, Snowflake medallion layers, dbt transforms, and governed KPI outputs.</desc>
+	<defs>
+		<marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+			<path d="M 0 0 L 10 5 L 0 10 z" fill="#475569" />
+		</marker>
+		<style>
+			text {
+				font-family: "Trebuchet MS", Verdana, Arial, sans-serif;
+			}
+
+			.title {
+				fill: #111827;
+				font-size: 40px;
+				font-weight: 700;
+			}
+
+			.subtitle,
+			.footer {
+				fill: #6b7280;
+				font-size: 18px;
+			}
+
+			.node {
+				fill: #ececff;
+				stroke: #9370db;
+				stroke-width: 2;
+			}
+
+			.node-title {
+				fill: #111827;
+				font-size: 22px;
+				font-weight: 700;
+				text-anchor: middle;
+			}
+
+			.node-sub {
+				fill: #6b7280;
+				font-size: 15px;
+				text-anchor: middle;
+			}
+
+			.edge {
+				fill: none;
+				stroke: #475569;
+				stroke-width: 4;
+				marker-end: url(#arrow);
+				stroke-linecap: round;
+			}
+
+			.rule {
+				stroke: #e5e7eb;
+				stroke-width: 2;
+			}
+		</style>
+	</defs>
+
+	<rect width="1600" height="950" rx="48" fill="#f7f7f5" />
+	<rect x="56" y="56" width="1488" height="838" rx="36" fill="#ffffff" stroke="#d6d3d1" stroke-width="2" />
+	<line class="rule" x1="96" y1="150" x2="1504" y2="150" />
+	<line class="rule" x1="96" y1="816" x2="1504" y2="816" />
+
+	<text class="title" x="100" y="105">Healthcare Data Warehouse</text>
+	<text class="subtitle" x="100" y="132">Stable Snowflake-first release with Azure target architecture, dbt medallion layers, governed KPI marts, and BI-ready outputs.</text>
+	<text class="footer" x="100" y="856">Validated local mode: 21 bronze tables loaded, 48 dbt models built, 256 tests passing, 18 RBAC grant checks, and Power BI plus SQL-ready gold marts.</text>
+
+	<path class="edge" d="M330 376 H360" />
+	<path class="edge" d="M600 376 H630" />
+	<path class="edge" d="M870 376 H900" />
+	<path class="edge" d="M1070 376 H1130" />
+	<path class="edge" d="M1370 368 L1370 278" />
+	<path class="edge" d="M1370 384 L1370 432" />
+	<path class="edge" d="M1480 468 L1480 620 H1360" />
+	<path class="edge" d="M1480 468 L1480 658 H1240" />
+	<path class="edge" d="M600 658 L600 430" />
+	<path class="edge" d="M600 658 L750 422" />
+	<path class="edge" d="M600 658 L1370 526" />
+
+	<rect class="node" x="90" y="330" width="240" height="92" rx="18" />
+	<text class="node-title" x="210" y="366">Clinical / Financial</text>
+	<text class="node-sub" x="210" y="392">Operational source systems</text>
+
+	<rect class="node" x="360" y="330" width="240" height="92" rx="18" />
+	<text class="node-title" x="480" y="366">Azure Landing Zone</text>
+	<text class="node-sub" x="480" y="392">Blob storage and intake</text>
+
+	<rect class="node" x="630" y="330" width="240" height="92" rx="18" />
+	<text class="node-title" x="750" y="366">RAW_DATA_STAGE</text>
+	<text class="node-sub" x="750" y="392">Snowflake stage contract</text>
+
+	<rect class="node" x="900" y="338" width="170" height="76" rx="18" />
+	<text class="node-title" x="985" y="382">BRONZE</text>
+
+	<rect class="node" x="1130" y="338" width="240" height="76" rx="18" />
+	<text class="node-title" x="1250" y="382">dbt Transformations</text>
+
+	<rect class="node" x="1270" y="210" width="220" height="76" rx="18" />
+	<text class="node-title" x="1380" y="254">SILVER</text>
+
+	<rect class="node" x="1270" y="430" width="220" height="92" rx="18" />
+	<text class="node-title" x="1380" y="466">GOLD KPI Marts</text>
+	<text class="node-sub" x="1380" y="492">Clinical, financial, ops</text>
+
+	<rect class="node" x="1110" y="620" width="260" height="76" rx="18" />
+	<text class="node-title" x="1240" y="664">Power BI / SQL</text>
+
+	<rect class="node" x="1360" y="620" width="160" height="76" rx="18" />
+	<text class="node-title" x="1440" y="664">RBAC</text>
+
+	<rect class="node" x="420" y="620" width="180" height="76" rx="18" />
+	<text class="node-title" x="510" y="664">CI / Terraform</text>
+</svg>

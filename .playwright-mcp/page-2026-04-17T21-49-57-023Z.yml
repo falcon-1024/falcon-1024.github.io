@@ -1,0 +1,262 @@
+- generic [ref=e2]:
+  - navigation [ref=e3]:
+    - generic [ref=e4]:
+      - button "Abhi Patel initials" [ref=e5] [cursor=pointer]:
+        - img "Abhi Patel initials" [ref=e6]
+      - list [ref=e8]:
+        - listitem [ref=e9]:
+          - link "EDUCATION" [ref=e10] [cursor=pointer]:
+            - /url: "#education"
+        - listitem [ref=e11]:
+          - link "EXPERIENCE" [ref=e12] [cursor=pointer]:
+            - /url: "#work-exp"
+        - listitem [ref=e13]:
+          - link "SKILLS" [ref=e14] [cursor=pointer]:
+            - /url: "#skills"
+        - listitem [ref=e15]:
+          - link "PROJECTS" [ref=e16] [cursor=pointer]:
+            - /url: "#projects"
+        - listitem [ref=e17]:
+          - link "CONTACT ME" [ref=e18] [cursor=pointer]:
+            - /url: "#contact-me"
+      - generic [ref=e19]:
+        - link "Open LinkedIn profile" [ref=e20] [cursor=pointer]:
+          - /url: https://www.linkedin.com/in/abhi--patel
+          - img [ref=e21]
+        - link "Open GitHub profile" [ref=e23] [cursor=pointer]:
+          - /url: https://github.com/falcon-1024
+          - img [ref=e24]
+  - generic [ref=e29]:
+    - paragraph [ref=e30]: Data Infrastructure, Retrieval Systems, and Applied AI
+    - heading "Abhi Patel" [level=1] [ref=e31]
+    - heading "Data Engineer. AI Engineer." [level=2] [ref=e32]
+    - generic [ref=e33]:
+      - paragraph [ref=e34]: My work sits where data engineering, backend reliability, and LLM behavior meet. I like systems that need to ingest imperfect inputs, stay observable under load, and still return something a human can trust.
+      - paragraph [ref=e35]: At Rencom Networks, that meant retrieval workflows and FastAPI services around crypto research. At Accenture, it meant ETL, warehouse, and ML delivery across Azure, Databricks, and Snowflake.
+      - paragraph [ref=e36]: "Outside work, the same instinct shows up in mountain trails and prediction-market tooling: map the terrain, measure the uncertainty, and keep moving with signal instead of noise."
+    - generic [ref=e37]:
+      - generic [ref=e38]:
+        - paragraph [ref=e39]: Analyst Time
+        - paragraph [ref=e40]: 45% reduction in manual lookup effort on research workflows.
+      - generic [ref=e41]:
+        - paragraph [ref=e42]: API Reliability
+        - paragraph [ref=e43]: 99.9% uptime with 30% lower p95 latency through batching and caching.
+      - generic [ref=e44]:
+        - paragraph [ref=e45]: Data Scale
+        - paragraph [ref=e46]: Enterprise ETL pipelines handling datasets beyond TB/day.
+      - generic [ref=e47]:
+        - paragraph [ref=e48]: Delivery Speed
+        - paragraph [ref=e49]: 30% faster release cycles with stronger CI/CD and observability.
+  - generic [ref=e51]:
+    - heading "EDUCATION" [level=1] [ref=e53]
+    - generic [ref=e54]:
+      - generic [ref=e55]:
+        - img "University of Windsor" [ref=e57]
+        - generic [ref=e58]:
+          - paragraph [ref=e59]: Master of Applied Computing
+          - link "- University of Windsor" [ref=e60] [cursor=pointer]:
+            - /url: https://www.uwindsor.ca/
+          - paragraph [ref=e61]: Graduate coursework in software engineering, data structures, algorithms, and machine learning.
+          - paragraph [ref=e62]: "- 2022 - 2024"
+      - generic [ref=e63]:
+        - img "Ahmedabad University" [ref=e65]
+        - generic [ref=e66]:
+          - paragraph [ref=e67]: Bachelor in Information and Communication Technology
+          - link "- Ahmedabad University" [ref=e68] [cursor=pointer]:
+            - /url: https://ahduni.edu.in/
+          - paragraph [ref=e69]: Built a foundation in probability, statistics, software engineering, databases, and applied programming.
+          - paragraph [ref=e70]: "- 2016 - 2020"
+  - generic [ref=e72]:
+    - heading "EXPERIENCE" [level=1] [ref=e74]
+    - generic [ref=e75]:
+      - article [ref=e76]:
+        - img "Rencom Networks" [ref=e78]
+        - generic [ref=e79]:
+          - paragraph [ref=e80]: Current Role
+          - heading "Data/AI Engineer" [level=5] [ref=e81]
+          - paragraph [ref=e82]: Rencom Networks
+          - paragraph [ref=e83]: Aug 2024 - Apr 2025
+          - paragraph [ref=e84]: RAG pipelines, hybrid retrieval, and FastAPI services on AKS for crypto research workflows.
+          - button "Read More" [ref=e85] [cursor=pointer]
+      - article [ref=e86]:
+        - img "Accenture" [ref=e88]
+        - generic [ref=e89]:
+          - heading "Data Engineer" [level=5] [ref=e90]
+          - link "Accenture" [ref=e91] [cursor=pointer]:
+            - /url: https://www.accenture.com/in-en/about/company/india
+          - paragraph [ref=e92]: May 2020 - Jul 2022
+          - paragraph [ref=e93]: Enterprise ETL, dimensional modeling, and ML platform delivery across Azure, Databricks, and Snowflake.
+          - button "Read More" [ref=e94] [cursor=pointer]
+    - heading "Earlier Experience" [level=2] [ref=e96]
+    - generic [ref=e97]:
+      - article [ref=e98]:
+        - img "Byte Prophecy Pvt. Ltd." [ref=e100]
+        - generic [ref=e101]:
+          - paragraph [ref=e102]: Internship
+          - heading "Data Engineering Intern" [level=5] [ref=e103]
+          - link "Byte Prophecy Pvt. Ltd." [ref=e104] [cursor=pointer]:
+            - /url: https://newsroom.accenture.com/news/2020/accenture-acquires-byte-prophecy-to-enhance-ai-and-digital-analytics-capabilities-in-emerging-markets
+          - paragraph [ref=e105]: Dec 2019 - May 2020
+          - paragraph [ref=e106]: Built a computer-vision attendance and insight system from CCTV feeds.
+          - button "Read More" [ref=e107] [cursor=pointer]
+      - article [ref=e108]:
+        - img "CSIR - Indian Institute of Toxicology Research" [ref=e110]
+        - generic [ref=e111]:
+          - paragraph [ref=e112]: Internship
+          - heading "Machine Learning Research Intern" [level=5] [ref=e113]
+          - link "CSIR - Indian Institute of Toxicology Research" [ref=e114] [cursor=pointer]:
+            - /url: http://iitrindia.org/en/index.aspx
+          - paragraph [ref=e115]: Jun 2019 - Jul 2019
+          - paragraph [ref=e116]: Researched model-selection workflows for toxicology prediction and biotech users.
+          - button "Read More" [ref=e117] [cursor=pointer]
+  - generic [ref=e119]:
+    - heading "SKILLS" [level=1] [ref=e121]
+    - generic [ref=e122]:
+      - generic [ref=e123]:
+        - heading "Generative AI & LLMOps" [level=2] [ref=e124]
+        - generic [ref=e125]:
+          - paragraph [ref=e126]: Databricks
+          - paragraph [ref=e127]: LangChain
+          - paragraph [ref=e128]: LlamaIndex
+          - paragraph [ref=e129]: OpenAI API
+          - paragraph [ref=e130]: MLflow
+          - paragraph [ref=e131]: RAG
+          - paragraph [ref=e132]: LLM Judges
+          - paragraph [ref=e133]: Elasticsearch Vector Search
+      - generic [ref=e134]:
+        - heading "Data Engineering" [level=2] [ref=e135]
+        - generic [ref=e136]:
+          - paragraph [ref=e137]: Apache Spark
+          - paragraph [ref=e138]: PySpark
+          - paragraph [ref=e139]: Spark Structured Streaming
+          - paragraph [ref=e140]: Batch ETL
+          - paragraph [ref=e141]: Snowflake
+          - paragraph [ref=e142]: Data Modeling
+          - paragraph [ref=e143]: Hybrid Search Architectures
+          - paragraph [ref=e144]: SQL
+      - generic [ref=e145]:
+        - heading "Backend & APIs" [level=2] [ref=e146]
+        - generic [ref=e147]:
+          - paragraph [ref=e148]: FastAPI
+          - paragraph [ref=e149]: Flask
+          - paragraph [ref=e150]: RESTful APIs
+          - paragraph [ref=e151]: asyncio
+          - paragraph [ref=e152]: Microservices
+          - paragraph [ref=e153]: Asynchronous Programming
+          - paragraph [ref=e154]: PyTest
+          - paragraph [ref=e155]: Python
+      - generic [ref=e156]:
+        - heading "Cloud & Platform" [level=2] [ref=e157]
+        - generic [ref=e158]:
+          - paragraph [ref=e159]: Microsoft Azure
+          - paragraph [ref=e160]: Azure Databricks
+          - paragraph [ref=e161]: Azure Kubernetes Service
+          - paragraph [ref=e162]: Docker
+          - paragraph [ref=e163]: Kubernetes
+          - paragraph [ref=e164]: Helm
+          - paragraph [ref=e165]: ArgoCD
+          - paragraph [ref=e166]: Azure Monitor
+  - generic [ref=e168]:
+    - heading "PROJECTS" [level=1] [ref=e170]
+    - heading "Featured Projects" [level=2] [ref=e172]
+    - generic [ref=e173]:
+      - article [ref=e174]:
+        - img "Financial Intelligence Platform" [ref=e176]
+        - generic [ref=e177]:
+          - generic [ref=e178]:
+            - generic [ref=e179]: Generative AI
+            - generic [ref=e180]: Data Engineering
+          - heading "Financial Intelligence Platform" [level=5] [ref=e181]
+          - paragraph [ref=e182]: Financial document intelligence service for SEC filings with split API and ingestion runtimes, job-tracked processing, and grounded question answering.
+          - generic [ref=e183]:
+            - generic [ref=e184]:
+              - paragraph [ref=e185]: Architecture
+              - paragraph [ref=e186]: Client query flows, evaluation, and asynchronous ingestion split across FastAPI, orchestrator plus SQS, worker fleet, and retrieval services.
+            - generic [ref=e187]:
+              - paragraph [ref=e188]: Scale signal
+              - paragraph [ref=e189]: AWS deployment topology includes Bedrock, S3, Qdrant, PostgreSQL, Redis, and CloudWatch instead of a single-process demo path.
+            - generic [ref=e190]:
+              - paragraph [ref=e191]: Primary outcome
+              - paragraph [ref=e192]: Grounded question answering over SEC filings and disclosure documents with traceable source context and tracked ingestion jobs.
+            - generic [ref=e193]:
+              - paragraph [ref=e194]: Operating surface
+              - paragraph [ref=e195]: Local Docker plus Ollama smoke runs, AWS-oriented infrastructure, REST endpoints, API artifact generation, and reproducible evaluation outputs.
+          - paragraph [ref=e196]: "2025"
+          - generic [ref=e197]:
+            - button "Project Details" [ref=e198] [cursor=pointer]
+            - link "Source Code" [ref=e199] [cursor=pointer]:
+              - /url: https://github.com/falcon-1024/financial-intelligence
+      - article [ref=e200]:
+        - img "Healthcare Data Warehouse" [ref=e202]
+        - generic [ref=e203]:
+          - generic [ref=e204]:
+            - generic [ref=e205]: Data Engineering
+            - generic [ref=e206]: Analytics Engineering
+          - heading "Healthcare Data Warehouse" [level=5] [ref=e207]
+          - paragraph [ref=e208]: Healthcare Snowflake warehouse with a shared RAW_DATA_STAGE contract, dbt medallion modeling, and governed KPI marts for BI and SQL consumption.
+          - generic [ref=e209]:
+            - generic [ref=e210]:
+              - paragraph [ref=e211]: Architecture
+              - paragraph [ref=e212]: Azure landing or local staged CSV ingestion into Snowflake medallion schemas, dbt transforms, and BI-ready gold marts.
+            - generic [ref=e213]:
+              - paragraph [ref=e214]: Scale signal
+              - paragraph [ref=e215]: Validated local execution loads 21 bronze tables and builds 48 dbt models before downstream BI consumption.
+            - generic [ref=e216]:
+              - paragraph [ref=e217]: Primary outcome
+              - paragraph [ref=e218]: Governed KPI marts for healthcare reporting over sample and synthetic data without overstating formal HIPAA certification.
+            - generic [ref=e219]:
+              - paragraph [ref=e220]: Operating surface
+              - paragraph [ref=e221]: Snowflake bootstrap scripts, stage uploads, dbt run and test flows, RBAC grant validation, SQL demo queries, and Terraform for the target architecture.
+          - paragraph [ref=e222]: "2025"
+          - generic [ref=e223]:
+            - button "Project Details" [ref=e224] [cursor=pointer]
+            - link "Source Code" [ref=e225] [cursor=pointer]:
+              - /url: https://github.com/falcon-1024/healthcare-dwh
+      - article [ref=e226]:
+        - img "Prediction Market Backtesting" [ref=e228]
+        - generic [ref=e229]:
+          - generic [ref=e230]:
+            - generic [ref=e231]: Quant Systems
+            - generic [ref=e232]: Trading Infrastructure
+          - heading "Prediction Market Backtesting" [level=5] [ref=e233]
+          - paragraph [ref=e234]: Prediction-market research stack with Kalshi and Polymarket adapters, PMXT raw mirroring, venue-agnostic strategies, and replayable NautilusTrader backtests.
+          - generic [ref=e235]:
+            - generic [ref=e236]:
+              - paragraph [ref=e237]: Architecture
+              - paragraph [ref=e238]: Vendor and local market data flows through PMXT mirror services, exchange adapters, strategy modules, Nautilus backtests, and analytics outputs.
+            - generic [ref=e239]:
+              - paragraph [ref=e240]: Scale signal
+              - paragraph [ref=e241]: Public mirror operations, relay observability badges, and multi-market runner support move the repo beyond a single-strategy demo.
+            - generic [ref=e242]:
+              - paragraph [ref=e243]: Primary outcome
+              - paragraph [ref=e244]: Replayable Kalshi and Polymarket research with exchange-aware execution modeling and decision-grade charting.
+            - generic [ref=e245]:
+              - paragraph [ref=e246]: Operating surface
+              - paragraph [ref=e247]: uv and Makefile-based local runs, PMXT raw API plus worker, public docs, observability badges, and regression tests.
+          - paragraph [ref=e248]: "2025"
+          - generic [ref=e249]:
+            - button "Project Details" [ref=e250] [cursor=pointer]
+            - link "Source Code" [ref=e251] [cursor=pointer]:
+              - /url: https://github.com/falcon-1024/prediction-market-backtesting
+    - button "Show Additional Projects" [ref=e253] [cursor=pointer]
+  - generic [ref=e255]:
+    - heading "CONTACT ME" [level=1] [ref=e257]
+    - generic [ref=e258]:
+      - heading "The best entry point depends on what you want to inspect. GitHub is where the implementation choices live. LinkedIn is the clean timeline. If the role sits around data platforms, retrieval systems, or backend AI infrastructure, email is the fastest way to start a real conversation." [level=2] [ref=e259]
+      - generic [ref=e260]:
+        - generic [ref=e261]:
+          - link [ref=e262] [cursor=pointer]:
+            - /url: https://github.com/falcon-1024
+            - img [ref=e263]
+          - paragraph [ref=e265]: Build Decisions
+        - generic [ref=e266]:
+          - link [ref=e267] [cursor=pointer]:
+            - /url: https://www.linkedin.com/in/abhi--patel
+            - img [ref=e268]
+          - paragraph [ref=e270]: Career Timeline
+        - generic [ref=e271]:
+          - img [ref=e273]
+          - paragraph [ref=e275]: Direct Reach
+      - paragraph [ref=e276]: abhi--patel [at] outlook [dot] com
+  - button "Switch to dark theme" [ref=e277] [cursor=pointer]:
+    - img [ref=e278]

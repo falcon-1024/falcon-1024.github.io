@@ -1,7 +1,12 @@
 "use client";
+import Image from "next/image";
 import React, { useState } from "react";
 import experienceData from "@/data/experienceData";
 import ExperienceModal from "@/components/experienceModal";
+import RevealBlock from "@/components/revealBlock";
+
+const primaryExperience = experienceData.filter((experience) => experience.tier === "primary");
+const earlyExperience = experienceData.filter((experience) => experience.tier === "early");
 
 const WorkExperience = () => {
   const [openExpModal, setOpenExpModal] = useState({
@@ -10,80 +15,130 @@ const WorkExperience = () => {
   });
 
   return (
-    <section id="work-exp" className="dark">
-      <div className="flex flex-col items-center min-h-screen justify-center h-full dark:bg-neutral-800">
-        {/* <!-- Inner flexbox wrapper for headings --> */}
-        <div className="flex flex-shrink-0 relative top-16 justify-center w-4/5 text-gray-600 mb-5">
-          <h1 className="text-3xl md:text-6xl min-[2300px]:text-9xl font-light">
+    <section id="work-exp">
+      <RevealBlock className="flex min-h-screen w-full flex-col items-center justify-center px-5 py-24 md:px-10 md:py-28">
+        <div className="mb-5 flex w-full max-w-6xl justify-center">
+          <h1 className="section-title text-3xl md:text-6xl min-[2300px]:text-9xl font-light">
             EXPERIENCE
           </h1>
         </div>
-        <div className="grid flex-shrink-0 grid-flow-row lg:grid-flow-col lg:grid-cols-3 relative top-16 w-5/6 mb-20">
+        <div className="mb-10 grid w-full max-w-6xl grid-flow-row auto-rows-fr gap-6 lg:grid-cols-2">
           {/* <!-- Cards --> */}
-          {experienceData.map((exp, idx) => (
-            <div
-              key={idx}
-              className="relative block rounded-2xl bg-white shadow-2xl dark:bg-neutral-700 text-center m-4"
-            >
-              {/* <!-- Card image --> */}
-              <div className="overflow-hidden rounded-t-xl">
-                <img
-                  className="object-cover w-full"
-                  src={exp.companyImage}
-                  alt=""
-                />
-              </div>
-
-              {/* <!-- Card body --> */}
-              <div className="p-6">
-                {/* <!-- Title --> */}
-                <h5 className="mb-2 text-lg md:text-2xl min-[2300px]:text-5xl font-bold tracking-wide text-neutral-800 dark:text-neutral-50">
-                  {exp.position}
-                </h5>
-                <a
-                  href={exp.companyUrl}
-                  className="font-normal text-sm md:text-lg min-[2300px]:text-3xl mb-2 text-neutral-500 dark:text-neutral-50 italic text-end"
-                >
-                  {" "}
-                  - {exp.companyName}
-                </a>
-                <p className="text-sm md:text-lg min-[2300px]:text-3xl text-neutral-500 dark:text-neutral-50">
-                  - {exp.duration}
-                </p>
-
-                <button
-                  onClick={() => {
-                    setOpenExpModal({
-                      ...openExpModal,
-                      id: idx,
-                      show: true,
-                    });
-                  }}
-                  className="bottom-0 mt-3 inline-block rounded bg-neutral-500 px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-white shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out hover:bg-neutral-800 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-neutral-600 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-neutral-700 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] dark:shadow-[0_4px_9px_-4px_rgba(59,113,202,0.5)] dark:hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)]"
-                >
-                  Read More
-                </button>
-                <ExperienceModal
-                  open={openExpModal}
-                  onClose={() =>
-                    setOpenExpModal({
-                      ...openExpModal,
-                      id: null,
-                      show: false,
-                    })
-                  }
-                />
-              </div>
-            </div>
+          {primaryExperience.map((exp) => (
+            <ExperienceCard
+              key={exp.id}
+              exp={exp}
+              openExpModal={openExpModal}
+              setOpenExpModal={setOpenExpModal}
+            />
           ))}
         </div>
+
+        <div className="mb-4 w-full max-w-6xl">
+          <h2 className="section-muted text-sm md:text-base min-[2300px]:text-3xl font-medium uppercase tracking-[0.28em]">
+            Earlier Experience
+          </h2>
+        </div>
+
+        <div className="mb-20 grid w-full max-w-6xl grid-flow-row auto-rows-fr gap-6 lg:grid-cols-2">
+          {earlyExperience.map((exp) => (
+            <ExperienceCard
+              key={exp.id}
+              exp={exp}
+              openExpModal={openExpModal}
+              setOpenExpModal={setOpenExpModal}
+              compact
+            />
+          ))}
+        </div>
+
+        <ExperienceModal
+          open={openExpModal}
+          onClose={() =>
+            setOpenExpModal({
+              ...openExpModal,
+              id: null,
+              show: false,
+            })
+          }
+        />
 
         {/* <!-- Inner flexbox wrapper for CTA elements --> */}
         {/* <div className="flex min-w-{1200px}:absolute items-center justify-center w-full px-10 pb-10 bottom-12 mt-10 min">
           <div className="bg-gray-200 dark:bg-gray-600 h-[4px] w-[200px]"></div>
         </div>*/}
-      </div>
+      </RevealBlock>
     </section>
+  );
+};
+
+const ExperienceCard = ({ exp, openExpModal, setOpenExpModal, compact = false }) => {
+  const isIllustration = exp.companyImage.endsWith(".svg");
+  const badge = exp.tier === "early"
+    ? "Internship"
+    : exp.id === "rencom-networks"
+      ? "Current Role"
+      : null;
+
+  return (
+  <article className="surface-card card-hover relative flex h-full flex-col overflow-hidden rounded-2xl">
+    <div className="media-frame relative aspect-[16/10] overflow-hidden">
+      <Image
+        className={isIllustration
+          ? "image-drift object-contain"
+          : `image-drift object-cover ${compact ? "scale-[1.02]" : ""}`}
+        src={`/${exp.companyImage}`}
+        alt={exp.companyName}
+        fill
+        sizes="(min-width: 1024px) 42vw, 90vw"
+      />
+    </div>
+
+    <div className="flex flex-1 flex-col items-start p-6 text-left">
+      {badge && (
+        <p className="section-muted text-xs md:text-sm min-[2300px]:text-xl uppercase tracking-[0.28em] mb-3">
+          {badge}
+        </p>
+      )}
+      <h5 className="section-title mb-2 text-lg md:text-2xl min-[2300px]:text-5xl font-bold tracking-wide">
+        {exp.position}
+      </h5>
+      {exp.companyUrl ? (
+        <a
+          href={exp.companyUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="section-copy font-normal text-sm md:text-lg min-[2300px]:text-3xl mb-2 italic"
+        >
+          {exp.companyName}
+        </a>
+      ) : (
+        <p className="section-copy font-normal text-sm md:text-lg min-[2300px]:text-3xl mb-2 italic">
+          {exp.companyName}
+        </p>
+      )}
+      <p className="section-muted text-sm md:text-lg min-[2300px]:text-3xl mb-4">
+        {exp.duration}
+      </p>
+      <p className="section-copy text-sm md:text-base min-[2300px]:text-3xl leading-relaxed mb-6">
+        {exp.summary}
+      </p>
+
+      <button
+        type="button"
+        onClick={() => {
+          setOpenExpModal({
+            ...openExpModal,
+            id: exp.id,
+            show: true,
+          });
+        }}
+        className="button-primary mt-auto"
+      >
+        Read More
+      </button>
+    </div>
+  </article>
   );
 };
 

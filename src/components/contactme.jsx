@@ -2,46 +2,26 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub, faLinkedinIn } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
-// import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import RevealBlock from "@/components/revealBlock";
 
 const ContactMe = () => {
   return (
-    <section id="contact-me" className="dark">
-      <div className="flex flex-col items-center min-h-screen h-full justify-center dark:bg-neutral-800">
-        {/* <!-- Inner flexbox wrapper for headings --> */}
-        <div className="flex flex-shrink-0 relative top-16 justify-center w-3/4 text-gray-600">
-          <h1 className="text-3xl md:text-6xl min-[2300px]:text-9xl font-light mb-5">
+    <section id="contact-me">
+      <RevealBlock className="flex min-h-screen w-full flex-col items-center justify-center px-5 py-24 md:px-10 md:py-28">
+        <div className="mb-6 flex w-full max-w-5xl justify-center">
+          <h1 className="section-title text-3xl md:text-6xl min-[2300px]:text-9xl font-light mb-5">
             CONTACT ME
           </h1>
         </div>
-        <div className="block relative flex-shrink-0 top-16 m-1.5 text-gray-500 w-3/4">
-          <h2 className="text-xl md:text-3xl min-[2300px]:text-6xl font-extralight text-center mb-7">
-            Hey there! Climb the peaks of data insights and mountain trails with
-            me. Navigate through my coding exploits on
-            <a className="italic" href="https://github.com/falcon-1024">
-              {" "}
-              GitHub
-            </a>
-            . Traverse the landscapes of my journey on
-            <a
-              className="italic"
-              href="https://www.linkedin.com/in/abhi--patel"
-            >
-              {" "}
-              LinkedIn
-            </a>
-            . Whether it&apos;s predicting patterns or exploring treks,
-            let&apos;s conquer challenges. Drop me a message at
-            <a className="italic" href="mailto:abhipatel5058@gmail.com">
-              {" "}
-              abhipatel5058@gmail.com
-            </a>
-            . Together, let&apos;s analyze datasets and summit peaks, crafting
-            solutions both in the world of data and the great outdoors.
+        <div className="surface-strong w-full max-w-5xl rounded-3xl px-6 py-8 md:px-10 md:py-10">
+          <h2 className="section-copy text-xl md:text-3xl min-[2300px]:text-6xl font-light text-center mb-10 leading-relaxed">
+            The best entry point depends on what you want to inspect. GitHub is
+            where the implementation choices live. LinkedIn is the clean
+            timeline. If the role sits around data platforms, retrieval
+            systems, or backend AI infrastructure, email is the fastest way to
+            start a real conversation.
           </h2>
-          <br />
-          <br />
-          <div className="grid flex-shrink-0 grid-cols-3">
+          <div className="grid flex-shrink-0 gap-6 md:grid-cols-3">
             <div className="text-center">
               <a
                 href="https://github.com/falcon-1024"
@@ -51,9 +31,12 @@ const ContactMe = () => {
               >
                 <FontAwesomeIcon
                   icon={faGithub}
-                  className="text-[#949494] text-3xl lg:text-5xl"
+                  className="section-muted text-3xl lg:text-5xl"
                 />
               </a>
+              <p className="section-muted mt-3 text-xs md:text-sm uppercase tracking-[0.24em]">
+                Build Decisions
+              </p>
             </div>
             <div className="text-center">
               <a
@@ -64,26 +47,30 @@ const ContactMe = () => {
               >
                 <FontAwesomeIcon
                   icon={faLinkedinIn}
-                  className="text-[#949494] text-3xl lg:text-5xl"
+                  className="section-muted text-3xl lg:text-5xl"
                 />
               </a>
+              <p className="section-muted mt-3 text-xs md:text-sm uppercase tracking-[0.24em]">
+                Career Timeline
+              </p>
             </div>
             <div className="text-center">
-              <a
-                href="mailto:abhipatel5058@gmail.com"
-                target="_blank"
-                className="bg-transparent"
-                rel="noopener noreferrer"
-              >
+              <div className="bg-transparent">
                 <FontAwesomeIcon
                   icon={faEnvelope}
-                  className="text-[#949494] text-3xl lg:text-5xl"
+                  className="section-muted text-3xl lg:text-5xl"
                 />
-              </a>
+              </div>
+              <p className="section-muted mt-3 text-xs md:text-sm uppercase tracking-[0.24em]">
+                Direct Reach
+              </p>
             </div>
           </div>
+          <p className="section-title mt-8 text-center text-lg md:text-2xl min-[2300px]:text-5xl font-medium tracking-wide">
+            abhi--patel [at] outlook [dot] com
+          </p>
         </div>
-      </div>
+      </RevealBlock>
     </section>
   );
 };

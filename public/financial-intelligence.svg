@@ -1,0 +1,135 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 950" role="img" aria-labelledby="title desc">
+	<title id="title">Financial Intelligence Platform</title>
+	<desc id="desc">Architecture diagram showing SEC filing ingestion, queue-backed processing, retrieval, evaluation, and API delivery.</desc>
+	<defs>
+		<marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+			<path d="M 0 0 L 10 5 L 0 10 z" fill="#475569" />
+		</marker>
+		<style>
+			text {
+				font-family: "Trebuchet MS", Verdana, Arial, sans-serif;
+			}
+
+			.title {
+				fill: #111827;
+				font-size: 40px;
+				font-weight: 700;
+			}
+
+			.subtitle,
+			.footer {
+				fill: #6b7280;
+				font-size: 18px;
+			}
+
+			.node {
+				fill: #ececff;
+				stroke: #9370db;
+				stroke-width: 2;
+			}
+
+			.node-title {
+				fill: #111827;
+				font-size: 22px;
+				font-weight: 700;
+				text-anchor: middle;
+			}
+
+			.node-sub {
+				fill: #6b7280;
+				font-size: 15px;
+				text-anchor: middle;
+			}
+
+			.edge {
+				fill: none;
+				stroke: #475569;
+				stroke-width: 4;
+				marker-end: url(#arrow);
+				stroke-linecap: round;
+			}
+
+			.rule {
+				stroke: #e5e7eb;
+				stroke-width: 2;
+			}
+		</style>
+	</defs>
+
+	<rect width="1600" height="950" rx="48" fill="#f7f7f5" />
+	<rect x="56" y="56" width="1488" height="838" rx="36" fill="#ffffff" stroke="#d6d3d1" stroke-width="2" />
+	<line class="rule" x1="96" y1="150" x2="1504" y2="150" />
+	<line class="rule" x1="96" y1="816" x2="1504" y2="816" />
+
+	<text class="title" x="100" y="105">Financial Intelligence Platform</text>
+	<text class="subtitle" x="100" y="132">Stable SEC filing intelligence release with split API and ingestion runtimes, queue-backed processing, and grounded question answering.</text>
+	<text class="footer" x="100" y="856">Release surface: FastAPI API service, evaluation engine, orchestrator plus SQS workers, PostgreSQL, Qdrant, Redis, S3, Bedrock, CloudWatch, and local Docker plus Ollama validation.</text>
+
+	<path class="edge" d="M320 258 H400" />
+	<path class="edge" d="M700 256 H800" />
+	<path class="edge" d="M1080 256 L1220 216" />
+	<path class="edge" d="M1080 256 L1220 326" />
+	<path class="edge" d="M1080 256 L1220 436" />
+
+	<path class="edge" d="M320 408 H400" />
+	<path class="edge" d="M700 408 L1220 216" />
+	<path class="edge" d="M700 408 L1220 436" />
+
+	<path class="edge" d="M320 658 H400" />
+	<path class="edge" d="M700 658 H800" />
+	<path class="edge" d="M1080 656 L1220 326" />
+	<path class="edge" d="M1080 656 L1220 436" />
+	<path class="edge" d="M1080 656 L1220 546" />
+	<path class="edge" d="M1080 656 L1220 656" />
+	<path class="edge" d="M1080 656 L1220 766" />
+
+	<rect class="node" x="100" y="220" width="220" height="76" rx="18" />
+	<text class="node-title" x="210" y="252">Client / API</text>
+	<text class="node-sub" x="210" y="278">Consumer</text>
+
+	<rect class="node" x="100" y="370" width="220" height="76" rx="18" />
+	<text class="node-title" x="210" y="402">Operator</text>
+	<text class="node-sub" x="210" y="428">Quality and demo flows</text>
+
+	<rect class="node" x="100" y="620" width="220" height="76" rx="18" />
+	<text class="node-title" x="210" y="652">SEC Filings</text>
+	<text class="node-sub" x="210" y="678">Disclosure documents</text>
+
+	<rect class="node" x="400" y="210" width="300" height="92" rx="18" />
+	<text class="node-title" x="550" y="246">API Service</text>
+	<text class="node-sub" x="550" y="272">FastAPI on ECS / Fargate</text>
+
+	<rect class="node" x="400" y="370" width="300" height="76" rx="18" />
+	<text class="node-title" x="550" y="402">Evaluation Engine</text>
+	<text class="node-sub" x="550" y="428">Faithfulness and quality checks</text>
+
+	<rect class="node" x="400" y="620" width="300" height="76" rx="18" />
+	<text class="node-title" x="550" y="652">Ingestion Orchestrator</text>
+	<text class="node-sub" x="550" y="678">Job tracking and retries</text>
+
+	<rect class="node" x="800" y="210" width="280" height="92" rx="18" />
+	<text class="node-title" x="940" y="246">RAG Query Pipeline</text>
+	<text class="node-sub" x="940" y="272">Grounded answer assembly</text>
+
+	<rect class="node" x="800" y="620" width="280" height="92" rx="18" />
+	<text class="node-title" x="940" y="656">SQS + Worker Fleet</text>
+	<text class="node-sub" x="940" y="682">Parallel ingestion and chunking</text>
+
+	<rect class="node" x="1220" y="180" width="250" height="72" rx="18" />
+	<text class="node-title" x="1345" y="222">Amazon Bedrock</text>
+
+	<rect class="node" x="1220" y="290" width="250" height="72" rx="18" />
+	<text class="node-title" x="1345" y="332">Qdrant</text>
+
+	<rect class="node" x="1220" y="400" width="250" height="72" rx="18" />
+	<text class="node-title" x="1345" y="442">PostgreSQL</text>
+
+	<rect class="node" x="1220" y="510" width="250" height="72" rx="18" />
+	<text class="node-title" x="1345" y="552">S3 Raw Storage</text>
+
+	<rect class="node" x="1220" y="620" width="250" height="72" rx="18" />
+	<text class="node-title" x="1345" y="662">Redis</text>
+
+	<rect class="node" x="1220" y="730" width="250" height="72" rx="18" />
+	<text class="node-title" x="1345" y="772">CloudWatch</text>
+</svg>

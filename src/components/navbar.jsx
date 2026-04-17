@@ -1,22 +1,19 @@
 "use client";
-import React, { useEffect, useRef, useState } from "react";
+import Image from "next/image";
+import React, { useEffect, useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub, faLinkedinIn } from "@fortawesome/free-brands-svg-icons";
 
 const visible_section_name = [
   "education",
   "experience",
+  "skills",
   "projects",
   "contact me",
 ];
 
 const Navbar = ({ sections, onSectionClick }) => {
   const [activeSection, setActiveSection] = useState(sections[0]);
-  const [navbarStyle, setNavbarStyle] = useState({
-    backgroundColor: "transparent",
-  });
-  const [showOptions, setShowOptions] = useState(false);
-  const navRef = useRef(null);
 
   const handleIntersection = (entries) => {
     entries.forEach((entry) => {
@@ -45,41 +42,18 @@ const Navbar = ({ sections, onSectionClick }) => {
 
   useEffect(() => {
     const init = async () => {
-      const { Collapse, Carousel, initTWE } = await import("tw-elements");
-      initTWE({ Collapse, Carousel });
+      const { Collapse, initTWE } = await import("tw-elements");
+      initTWE({ Collapse });
     };
     init();
   }, []);
 
-  useEffect(() => {
-    const handleScroll = () => {
-      const scrollPosition = window.scrollY;
-      const threshold = 30;
-
-      if (scrollPosition < threshold) {
-        setNavbarStyle({ backgroundColor: "transparent" });
-      } else {
-        setNavbarStyle({ backgroundColor: "#014780" });
-      }
-    };
-
-    window.addEventListener("scroll", handleScroll);
-
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
-
-  const getLinkStyle = (section) => {
-    return activeSection === section ? "active" : "navbar-options";
-  };
-
   return (
-    <nav className="z-10 fixed top-0 flex-no-wrap flex w-screen items-center justify-between bg-[#FBFBFB] py-2 shadow-md shadow-black/5 dark:bg-neutral-600 dark:shadow-black/10 md:flex-wrap md:justify-start md:py-2">
+    <nav className="surface-nav z-10 fixed top-0 flex-no-wrap flex w-screen items-center justify-between py-2 md:flex-wrap md:justify-start md:py-2">
       <div className="flex w-full flex-wrap items-center justify-between px-3">
         {/* <!-- Hamburger button for mobile view --> */}
         <button
-          className="block border-0 bg-transparent px-2 text-neutral-500 hover:no-underline hover:shadow-none focus:no-underline focus:shadow-none focus:outline-none focus:ring-0 dark:text-neutral-200 md:hidden"
+          className="nav-icon block border-0 bg-transparent px-2 hover:no-underline hover:shadow-none focus:no-underline focus:shadow-none focus:outline-none focus:ring-0 md:hidden"
           type="button"
           data-twe-collapse-init
           data-twe-target="#navbarSupportedContent1"
@@ -105,14 +79,22 @@ const Navbar = ({ sections, onSectionClick }) => {
         </button>
 
         {/* <!-- Logo --> */}
-        <a
-          className="mb-1 ml-2 mr-5 mt-1 flex items-center text-neutral-900 hover:text-neutral-900 focus:text-neutral-900 dark:text-neutral-200 dark:hover:text-neutral-400 dark:focus:text-neutral-400"
+        <button
+          type="button"
+          className="brand-mark mb-1 ml-2 mr-5 mt-1 flex items-center"
           onClick={() => {
             onSectionClick("home");
           }}
         >
-          <img src="initial.png" className="h-6" />
-        </a>
+          <Image
+            src="/initial.png"
+            className="brand-logo"
+            alt="Abhi Patel initials"
+            width={24}
+            height={24}
+            priority
+          />
+        </button>
         {/* <!-- Collapsible navigation container --> */}
         <div
           className="!visible hidden flex-grow basis-[100%] items-center md:!flex md:basis-auto mt-1"
@@ -134,8 +116,10 @@ const Navbar = ({ sections, onSectionClick }) => {
                 }}
               >
                 <a
-                  className="text-neutral-500 transition duration-200 hover:text-neutral-700 hover:ease-in-out focus:text-neutral-700 disabled:text-black/30 motion-reduce:transition-none dark:text-neutral-200 dark:hover:text-neutral-300 dark:focus:text-neutral-300 md:px-2 [&.active]:text-black/90 dark:[&.active]:text-zinc-400"
-                  href="#{section}"
+                  className={`nav-link transition duration-200 hover:ease-in-out disabled:text-black/30 motion-reduce:transition-none md:px-2 ${
+                    activeSection === section ? "active" : ""
+                  }`}
+                  href={`#${section}`}
                   data-twe-nav-link-ref
                 >
                   {visible_section_name.at(index).toUpperCase()}
@@ -146,19 +130,25 @@ const Navbar = ({ sections, onSectionClick }) => {
         </div>
 
         {/* <!-- Right elements --> */}
-        <div className="relative flex items-center ml-2">
+        <div className="relative ml-2 flex items-center gap-1">
           {/* <!-- LinkedIn Icon --> */}
           <a
-            className="mr-4 mt-2 text-neutral-600 transition duration-200 hover:text-neutral-700 hover:ease-in-out focus:text-neutral-700 disabled:text-black/30 motion-reduce:transition-none dark:text-neutral-200 dark:hover:text-neutral-300 dark:focus:text-neutral-300 [&.active]:text-black/90 dark:[&.active]:text-neutral-400"
+            className="nav-icon mr-4 mt-2 transition duration-200 hover:ease-in-out disabled:text-black/30 motion-reduce:transition-none"
             href="https://www.linkedin.com/in/abhi--patel"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Open LinkedIn profile"
           >
             <FontAwesomeIcon icon={faLinkedinIn} className="h-6" />
           </a>
 
           {/* <!-- Github Icon --> */}
           <a
-            className="mr-4 mt-2 text-neutral-600 transition duration-200 hover:text-neutral-700 hover:ease-in-out focus:text-neutral-700 disabled:text-black/30 motion-reduce:transition-none dark:text-neutral-200 dark:hover:text-neutral-300 dark:focus:text-neutral-300 [&.active]:text-black/90 dark:[&.active]:text-neutral-400"
+            className="nav-icon mr-4 mt-2 transition duration-200 hover:ease-in-out disabled:text-black/30 motion-reduce:transition-none"
             href="https://github.com/falcon-1024"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Open GitHub profile"
           >
             <FontAwesomeIcon icon={faGithub} className="h-6" />
           </a>

@@ -1,0 +1,105 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 950" role="img" aria-labelledby="title desc">
+	<title id="title">Rencom Networks</title>
+	<desc id="desc">Architecture diagram showing Databricks pipelines, hybrid retrieval, evaluation loops, FastAPI services, and AKS delivery for analyst workflows.</desc>
+	<defs>
+		<marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+			<path d="M 0 0 L 10 5 L 0 10 z" fill="#475569" />
+		</marker>
+		<style>
+			text {
+				font-family: "Trebuchet MS", Verdana, Arial, sans-serif;
+			}
+
+			.title {
+				fill: #111827;
+				font-size: 40px;
+				font-weight: 700;
+			}
+
+			.subtitle,
+			.footer {
+				fill: #6b7280;
+				font-size: 18px;
+			}
+
+			.node {
+				fill: #ececff;
+				stroke: #9370db;
+				stroke-width: 2;
+			}
+
+			.node-title {
+				fill: #111827;
+				font-size: 22px;
+				font-weight: 700;
+				text-anchor: middle;
+			}
+
+			.node-sub {
+				fill: #6b7280;
+				font-size: 15px;
+				text-anchor: middle;
+			}
+
+			.edge {
+				fill: none;
+				stroke: #475569;
+				stroke-width: 4;
+				marker-end: url(#arrow);
+				stroke-linecap: round;
+			}
+
+			.rule {
+				stroke: #e5e7eb;
+				stroke-width: 2;
+			}
+		</style>
+	</defs>
+
+	<rect width="1600" height="950" rx="48" fill="#f7f7f5" />
+	<rect x="56" y="56" width="1488" height="838" rx="36" fill="#ffffff" stroke="#d6d3d1" stroke-width="2" />
+	<line class="rule" x1="96" y1="150" x2="1504" y2="150" />
+	<line class="rule" x1="96" y1="816" x2="1504" y2="816" />
+
+	<text class="title" x="100" y="105">Rencom Networks</text>
+	<text class="subtitle" x="100" y="132">Crypto research workflows across Databricks pipelines, hybrid retrieval, FastAPI services, analyst tooling, and AKS delivery.</text>
+	<text class="footer" x="100" y="856">Experience surface: Databricks and Spark orchestration, Elasticsearch hybrid search, FastAPI asyncio services, MLflow evaluation, Docker packaging, and AKS deployment.</text>
+
+	<path class="edge" d="M350 386 H390" />
+	<path class="edge" d="M640 386 H710" />
+	<path class="edge" d="M960 386 L1030 266" />
+	<path class="edge" d="M960 386 L1030 506" />
+	<path class="edge" d="M960 578 L1030 266" />
+	<path class="edge" d="M960 578 L1030 506" />
+	<path class="edge" d="M1280 266 H1360" />
+	<path class="edge" d="M1280 506 H1360" />
+
+	<rect class="node" x="90" y="340" width="260" height="92" rx="18" />
+	<text class="node-title" x="220" y="376">Research Inputs</text>
+	<text class="node-sub" x="220" y="402">Market data, reports, analyst context</text>
+
+	<rect class="node" x="390" y="340" width="250" height="92" rx="18" />
+	<text class="node-title" x="515" y="376">Databricks Pipelines</text>
+	<text class="node-sub" x="515" y="402">Spark orchestration and prep</text>
+
+	<rect class="node" x="710" y="340" width="250" height="92" rx="18" />
+	<text class="node-title" x="835" y="376">Hybrid Retrieval</text>
+	<text class="node-sub" x="835" y="402">Elasticsearch plus filters</text>
+
+	<rect class="node" x="710" y="540" width="250" height="76" rx="18" />
+	<text class="node-title" x="835" y="582">MLflow Evaluation</text>
+
+	<rect class="node" x="1030" y="220" width="250" height="92" rx="18" />
+	<text class="node-title" x="1155" y="256">FastAPI Services</text>
+	<text class="node-sub" x="1155" y="282">asyncio microservices</text>
+
+	<rect class="node" x="1030" y="460" width="250" height="92" rx="18" />
+	<text class="node-title" x="1155" y="496">Analyst Workflows</text>
+	<text class="node-sub" x="1155" y="522">Grounded research tooling</text>
+
+	<rect class="node" x="1360" y="220" width="170" height="76" rx="18" />
+	<text class="node-title" x="1445" y="262">LLM APIs</text>
+
+	<rect class="node" x="1360" y="460" width="170" height="76" rx="18" />
+	<text class="node-title" x="1445" y="502">AKS / Docker</text>
+</svg>

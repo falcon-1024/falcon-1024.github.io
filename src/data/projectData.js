@@ -1,129 +1,209 @@
 const projectsData = [
-    {
-      "title": "PUBG Player Clustering",
-      "shortDescription":
-        "Dive into PUBG player behavior, leveraging cutting-edge clustering techniques to unveil gameplay patterns.",
-      "detailedDescription":
-        "Explore the world of PUBG through behavioral data analysis. Utilizing K-means clustering and PCA, this project classifies players based on their in-game actions, offering unprecedented insights for game enhancement. The study pioneers the application of behavioral data in clustering, a novel approach for understanding player dynamics.",
-      "image": "pubg-clustering.png",
-      "categories": [
-        "Machine Learning", "Hash Function"
-      ],
-      "duration": "Jan. ’23 - April ’23 (Semester 2)"
-    },
-    {
-      "title":
-        "UWin MAC ChatBot",
-      "shortDescription":
-        "Revolutionize MAC department communication with our AI-driven chatbot. Seamless integration of advanced paraphrasing ensures precise responses and dynamic adaptability, setting a new standard for intelligent interaction.",
-      "detailedDescription":
-        "Introducing a sophisticated chatbot for the MAC department, this project amalgamates artificial intelligence, Flask backend development, and Bootstrap frontend for a holistic solution. Leveraging a state-of-the-art paraphrase model, the chatbot dynamically generates and stores paraphrased questions, enhancing user query understanding. Administrators can effortlessly update FAQs, ensuring adaptability. The report delves into architectural intricacies, motivations, and outcomes, aiming to redefine MAC community interaction standards. Our chatbot represents a transformative solution, fostering responsive and anticipatory communication within the MAC community.",
-      "image": "chatbot.png", 
-      "categories": ["Machine Learning","Software Engineering"],
-      "duration": "June ’19 – July ‘19 (Summer Internship)"
-    },
-    {
-      "title": "Storage as a Service",
-      "shortDescription":
-        "Cloud-based data storage service with replication and fault tolerance.",
-      "detailedDescription":
-        "Cloud-Based Data Storage Service is created from scratch. Setup of a cluster of computers acting as data nodes and a server. Distributing and receiving blocks of files across server and nodes is done with Message Passing Interface(MPI) with replication factor and fault tolerance in consideration.",
-      "image": "cloud-storage.png", 
-      "categories": ["Cloud Computing"],
-      "duration": "Aug. ’19 – Dec. ‘19 (Semester 7)"
-    },
-    {
-      "title": "Bloom Filter",
-      "shortDescription":
-        "Explore Bloom Filter's space-saving algorithm for quick set membership tests, ideal for Big Data applications.",
-      "detailedDescription":
-        "The Bloom filter optimizes set membership tests in Big Data by drastically reducing storage needs. Using hash functions, it efficiently determines if an item is present in a set. However, false positives may occur, presenting a unique challenge. This project delves into the implementation and significance of Bloom Filters in improving storage efficiency and retrieval processes.",
-      "image": "bloom-filter.png", 
-      "categories": ["Big Data", "Hash Function"],
-      "duration": "Aug. ’19 – Dec. ‘19 (Semester 7)"
-    },
-    {
-      "title": "Forex Rate Prediction",
-      "shortDescription": "Prediction of foreign exchange rates using ARIMA model.",
-      "detailedDescription":
-        "Foreign exchange rate is predicted Using Auto Regressive Integrated Moving Average(ARIMA) Model. Four countries are selected, and exchange rates between them are predicted using only the previous exchange rates applied to the optimized ARIMA model.",
-      "image": "forex-arima.png",
-      "categories": ["Big Data", "Machine Learning"],
-      "duration": "Jan. ’19 – April ‘19 (Semester 6)"
-    },
-    {
-      "title": "Gnutella Protocol",
-      "shortDescription":
-        "Implementation of the Gnutella peer-to-peer network protocol.",
-      "detailedDescription":
-        "Gnutella is a peer-to-peer network protocol that was implemented by writing a client program. These client programs connect to each other and can transfer files with each other over the internet.",
-      "image": "gnutella.png", 
-      "categories": ["Computer Networks"],
-      "duration": "Aug. ’18 – Dec. ‘18 (Semester 5)"
-    },
-    {
-      "title": "Spatial-Temporal Cooperative Spectrum Sensing in CR-VANET",
-      "shortDescription":
-        "Enhance CR-VANET cooperation with a novel hybrid scheme, leveraging joint spatial-temporal correlation to boost decision accuracy while minimizing overheads. Simulation results validate improved performance.",
-      "detailedDescription":
-        "This project introduces a groundbreaking hybrid cooperative spectrum sensing scheme for Cognitive Radio Vehicular Ad Hoc Networks (CR-VANETs). By exploiting joint spatial-temporal correlation, the system achieves enhanced decision accuracy and reduced overheads. Theoretical insights into joint spatial-temporal correlation's impact on cooperative spectrum sensing performance are presented. Optimal probability of detection expressions, considering the target probability of false alarm, are derived. An efficient double-threshold optimization problem is formulated to select vehicles for cooperation, proposing a hybrid scheme. Simulation results affirm the scheme's efficacy in addressing user frequency selection challenges while boosting decision accuracy in CR-VANET cooperative spectrum sensing.",
-      "image": "vehicle.PNG", 
-      "categories": ["Probability and Random Processing", "Hash Function"],
-      "duration": "Jan. ’18 – Dec ‘18 (Semester 5)"
-    },
-    {
-      "title": "EduConnect: Bridging Gaps for Orphanage Kids",
-      "shortDescription":
-        "Employing SDLC, this project connects orphanages, volunteer teachers, and asset donors, facilitating free, organized lectures for orphaned children.",
-      "detailedDescription":
-        "Following Software Development Life Cycle (SDLC) steps in bi-weekly cycles, the initiative leverages technology to unite orphanages, teachers, and donors. EduConnect ensures a systematic, iterative approach to delivering impactful education opportunities.",
-      "image": "educating-orphans.png", 
-      "categories": ["Software Engineering"],
-      "duration": "Jan. ’17 – April ‘17 (Semester 2)"
-    },
-    {
-      "title": "Image Compression and Decompression",
-      "shortDescription":
-        "Implementation of JPEG image compression technique on MATLAB and FPGA.",
-      "detailedDescription":
-        "Lossy image Compression technique called JPEG is implemented using programming on MATLAB and on FPGA to see the working and complexity of programming in basic circuits, and also its decompression.",
-      "image": "fpga.png",
-      "categories": [
-        "Linear Algebra"
-      ],
-      "duration": "Aug. ’17 – Dec. ‘17 (Semester 3)"
-    },
-    {//
-      "title": "Automatic Parallel Parking Car Model",
-      "shortDescription":
-        "Development of an autonomous car-maneuvering system for parallel parking.",
-      "detailedDescription":
-        "An autonomous car-maneuvering system that moves a vehicle from a traffic lane into a parking spot to perform parallel parking. Micro-controller called Arduino Uno with necessary sensors attached to a car model is programmed with commands and conditions for autonomous movement and parallel parking.",
-      "image": "parallel-parking-car.jpg",
-      "categories": ["Internet of Things", "Linear Algebra"],
-      "duration": "Aug. ’16 – Dec. ‘16 (Semester 1)"
-    },
-    {
-      "title": "Dynamic Image Wizard",
-      "shortDescription":
-        "Robust image processing app integrating enhancement, transformation, restoration, encoding, and compression. Empowering users with versatile features through a structured Software Development Life Cycle (SDLC) approach.",
-      "detailedDescription":
-        "A dynamic digital image processing application is developed using a structured Software Development Life Cycle (SDLC) approach. The application excels in performing diverse operations such as enhancement, transformation, restoration, encoding, and compression. Guided by SDLC principles, each project phase, from conceptualization to iterative development, ensured a reliable and feature-rich outcome. Users can effortlessly apply advanced image processing techniques through an intuitive interface. This project showcases the successful integration of SDLC practices and cutting-edge image processing functionalities.",
-      "image": "dip.png",
-      "categories": ["Linear Algebra"],
-      "duration": "Aug. ’18 – Dec. ‘18 (Semester 5)"
-    },
-    {
-      "title":
-        "IoT based Plant Health Monitoring using image Processing and Machine Learning",
-      "shortDescription":
-        "Development of an IoT-based system for plant health monitoring using image processing and ML.",
-      "detailedDescription":
-        "Live stream of data from the sensors related to the plant is stored on a server and processed, and can also be monitored. Data is analyzed based on pretrained ML models and in case of discrepancies, the user is alerted.",
-      "image": "iot-plant-health.png", 
-      "categories": ["Internet of Things", "Machine Learning"],
-      "duration": "Aug. ’19 – Dec. ‘19 (Semester 7)"
-    }
-  ]
+  {
+    id: "financial-intelligence",
+    featured: true,
+    title: "Financial Intelligence Platform",
+    shortDescription:
+      "Financial document intelligence service for SEC filings with split API and ingestion runtimes, job-tracked processing, and grounded question answering.",
+    detailedDescription:
+      "Built FIP as a financial document intelligence service for SEC filings and related disclosures. The current release separates API and ingestion services, uses an orchestrator plus SQS-backed worker fleet for job-tracked parallel ingestion, stores metadata in PostgreSQL and vectors in Qdrant, and serves grounded question answering through FastAPI. The repo also ships Docker-based local development with Ollama, AWS-first infrastructure definitions, API demo artifacts, and repeatable portfolio evaluation workflows.",
+    image: "financial-intelligence-hero.svg",
+    categories: ["Generative AI", "Data Engineering"],
+    stack: [
+      "FastAPI",
+      "Amazon SQS",
+      "Amazon S3",
+      "AWS Bedrock",
+      "Qdrant",
+      "PostgreSQL",
+      "Redis",
+      "Ollama",
+      "Docker",
+      "Python",
+    ],
+    highlights: [
+      "Separated API and ingestion into distinct runtime services with orchestrator, queue, worker, and poller roles instead of a single-process demo path.",
+      "Implemented SEC filing ingestion across PostgreSQL metadata, Qdrant vectors, S3 raw storage, and Bedrock-backed retrieval.",
+      "Published repeatable local smoke, API-demo, and portfolio-evaluation workflows with reported faithfulness 0.864, answer relevance 0.916, and context recall 1.000.",
+    ],
+    systemProfile: [
+      {
+        label: "Architecture",
+        value: "Client query flows, evaluation, and asynchronous ingestion split across FastAPI, orchestrator plus SQS, worker fleet, and retrieval services.",
+      },
+      {
+        label: "Scale signal",
+        value: "AWS deployment topology includes Bedrock, S3, Qdrant, PostgreSQL, Redis, and CloudWatch instead of a single-process demo path.",
+      },
+      {
+        label: "Primary outcome",
+        value: "Grounded question answering over SEC filings and disclosure documents with traceable source context and tracked ingestion jobs.",
+      },
+      {
+        label: "Operating surface",
+        value: "Local Docker plus Ollama smoke runs, AWS-oriented infrastructure, REST endpoints, API artifact generation, and reproducible evaluation outputs.",
+      },
+    ],
+    repoUrl: "https://github.com/falcon-1024/financial-intelligence",
+    duration: "2025",
+  },
+  {
+    id: "healthcare-dwh",
+    featured: true,
+    title: "Healthcare Data Warehouse",
+    shortDescription:
+      "Healthcare Snowflake warehouse with a shared RAW_DATA_STAGE contract, dbt medallion modeling, and governed KPI marts for BI and SQL consumption.",
+    detailedDescription:
+      "Built a healthcare analytics warehouse around an Azure target architecture and a validated Snowflake-first local mode. The current release loads checked-in sample healthcare data into a shared RAW_DATA_STAGE, materializes BRONZE, SILVER, and GOLD layers through dbt, and supports Power BI or SQL analysis over governed KPI marts. The validated path produces 21 bronze tables, 48 dbt models, 256 passing dbt tests, and 18 RBAC grant checks, with Terraform retained for the Azure target deployment path.",
+    image: "healthcare-dwh-hero.svg",
+    categories: ["Data Engineering", "Analytics Engineering"],
+    stack: [
+      "Azure Blob Storage",
+      "Snowflake",
+      "dbt",
+      "Terraform",
+      "Power BI",
+      "Python",
+      "SQL",
+    ],
+    highlights: [
+      "Implemented the shared RAW_DATA_STAGE contract so the same bronze-load SQL works for Azure external stages or Snowflake internal stages.",
+      "Built 48 dbt models and 16 KPI-oriented gold outputs across clinical, financial, operational, and patient-experience reporting.",
+      "Validated governance and least-privilege flows with 18 RBAC grant checks, 21 bronze tables loaded, and 256 passing dbt tests.",
+    ],
+    systemProfile: [
+      {
+        label: "Architecture",
+        value: "Azure landing or local staged CSV ingestion into Snowflake medallion schemas, dbt transforms, and BI-ready gold marts.",
+      },
+      {
+        label: "Scale signal",
+        value: "Validated local execution loads 21 bronze tables and builds 48 dbt models before downstream BI consumption.",
+      },
+      {
+        label: "Primary outcome",
+        value: "Governed KPI marts for healthcare reporting over sample and synthetic data without overstating formal HIPAA certification.",
+      },
+      {
+        label: "Operating surface",
+        value: "Snowflake bootstrap scripts, stage uploads, dbt run and test flows, RBAC grant validation, SQL demo queries, and Terraform for the target architecture.",
+      },
+    ],
+    repoUrl: "https://github.com/falcon-1024/healthcare-dwh",
+    duration: "2025",
+  },
+  {
+    id: "prediction-market-backtesting",
+    featured: true,
+    title: "Prediction Market Backtesting",
+    shortDescription:
+      "Prediction-market research stack with Kalshi and Polymarket adapters, PMXT raw mirroring, venue-agnostic strategies, and replayable NautilusTrader backtests.",
+    detailedDescription:
+      "Built an open-source prediction-market research framework on top of NautilusTrader with custom Kalshi and Polymarket adapters, a separate venue-agnostic strategy package, and replayable backtests that model fees, position sizing, and Polymarket L2 order-book behavior. The current public release also includes a PMXT mirror-focused relay service with raw archive access, SQLite-backed state, live observability badges, and publication-grade analytics for equity, drawdown, Sharpe, monthly returns, and cumulative Brier advantage.",
+    image: "prediction-market-backtesting-hero.svg",
+    categories: ["Quant Systems", "Trading Infrastructure"],
+    stack: [
+      "Python",
+      "Rust",
+      "NautilusTrader",
+      "Kalshi Adapter",
+      "Polymarket Adapter",
+      "PMXT Relay",
+      "SQLite",
+      "uv",
+      "Execution Modeling",
+    ],
+    highlights: [
+      "Supports multi-market strategies, better position sizing, fee modeling, and Polymarket L2 order-book backtests.",
+      "Separates venue-specific research and loading code from reusable strategy modules and backtest runners.",
+      "Ships a public PMXT mirror and badge surface with raw archive delivery, queue and state visibility, and local processing support.",
+    ],
+    systemProfile: [
+      {
+        label: "Architecture",
+        value: "Vendor and local market data flows through PMXT mirror services, exchange adapters, strategy modules, Nautilus backtests, and analytics outputs.",
+      },
+      {
+        label: "Scale signal",
+        value: "Public mirror operations, relay observability badges, and multi-market runner support move the repo beyond a single-strategy demo.",
+      },
+      {
+        label: "Primary outcome",
+        value: "Replayable Kalshi and Polymarket research with exchange-aware execution modeling and decision-grade charting.",
+      },
+      {
+        label: "Operating surface",
+        value: "uv and Makefile-based local runs, PMXT raw API plus worker, public docs, observability badges, and regression tests.",
+      },
+    ],
+    repoUrl: "https://github.com/falcon-1024/prediction-market-backtesting",
+    duration: "2025",
+  },
+  {
+    id: "uwin-mac-chatbot",
+    featured: false,
+    title: "UWin MAC ChatBot",
+    shortDescription:
+      "AI-assisted departmental chatbot with FAQ administration and dynamic paraphrasing to improve query matching.",
+    detailedDescription:
+      "Built a chatbot for the MAC department by combining a Flask backend with an administrative FAQ workflow and a paraphrase model to improve how user questions are matched. The project focused on practical departmental support, dynamic content updates, and more resilient question understanding than a static FAQ page.",
+    image: "chatbot.png",
+    categories: ["Machine Learning", "Software Engineering"],
+    stack: ["Flask", "Python", "Bootstrap", "NLP"],
+    duration: "2023",
+  },
+  {
+    id: "storage-as-a-service",
+    featured: false,
+    title: "Storage as a Service",
+    shortDescription:
+      "Distributed storage service built from scratch with replication and fault tolerance across a node cluster.",
+    detailedDescription:
+      "Implemented a cloud-style storage service from scratch using a server and distributed data nodes communicating over MPI. The system focused on block distribution, replication, and fault tolerance, making it one of the better early indicators of distributed-systems interest in the portfolio.",
+    image: "cloud-storage.png",
+    categories: ["Distributed Systems", "Cloud Computing"],
+    stack: ["MPI", "Python", "Distributed Storage"],
+    duration: "2019",
+  },
+  {
+    id: "pubg-player-clustering",
+    featured: false,
+    title: "PUBG Player Clustering",
+    shortDescription:
+      "Behavioral clustering project using PCA and K-means to segment player styles from gameplay telemetry.",
+    detailedDescription:
+      "Analyzed PUBG behavioral data with PCA and K-means clustering to identify gameplay patterns and player archetypes. The work demonstrated applied machine learning around unsupervised analysis, feature reduction, and turning raw behavioral data into interpretable clusters.",
+    image: "pubg-clustering.png",
+    categories: ["Machine Learning", "Analytics"],
+    stack: ["Python", "PCA", "K-means"],
+    duration: "2023",
+  },
+  {
+    id: "iot-plant-health",
+    featured: false,
+    title: "Plant Health Monitoring",
+    shortDescription:
+      "IoT and ML workflow for plant monitoring using sensor streams, image analysis, and alerting.",
+    detailedDescription:
+      "Developed an IoT-based monitoring workflow that streams plant-related sensor data to a server, applies image processing and machine learning analysis, and alerts users when anomalies appear. The project combined hardware-driven data capture with server-side analytics and monitoring logic.",
+    image: "iot-plant-health.png",
+    categories: ["Internet of Things", "Machine Learning"],
+    stack: ["Python", "IoT", "Image Processing", "ML"],
+    duration: "2019",
+  },
+  {
+    id: "parallel-parking-car",
+    featured: false,
+    title: "Automatic Parallel Parking Car Model",
+    shortDescription:
+      "Autonomous parking prototype using an Arduino-controlled car model with sensor-based maneuvering logic.",
+    detailedDescription:
+      "Built an Arduino-driven car model that can move from a traffic lane into a parallel parking space using programmed control flow and sensor input. While early-career work, it still demonstrates comfort with embedded control logic and translating algorithms into physical systems.",
+    image: "parallel-parking-car.jpg",
+    categories: ["Internet of Things", "Embedded Systems"],
+    stack: ["Arduino", "Sensors", "Control Logic"],
+    duration: "2016",
+  },
+];
 
-  export default projectsData;
+export default projectsData;

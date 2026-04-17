@@ -1,0 +1,113 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 950" role="img" aria-labelledby="title desc">
+  <title id="title">Prediction Market Backtesting</title>
+  <desc id="desc">Architecture diagram showing PMXT mirror services, exchange adapters, strategy modules, Nautilus backtests, and analytics outputs.</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#475569" />
+    </marker>
+    <style>
+      text {
+        font-family: "Trebuchet MS", Verdana, Arial, sans-serif;
+      }
+
+      .title {
+        fill: #111827;
+        font-size: 40px;
+        font-weight: 700;
+      }
+
+      .subtitle,
+      .footer {
+        fill: #6b7280;
+        font-size: 18px;
+      }
+
+      .node {
+        fill: #ececff;
+        stroke: #9370db;
+        stroke-width: 2;
+      }
+
+      .node-title {
+        fill: #111827;
+        font-size: 22px;
+        font-weight: 700;
+        text-anchor: middle;
+      }
+
+      .node-sub {
+        fill: #6b7280;
+        font-size: 15px;
+        text-anchor: middle;
+      }
+
+      .edge {
+        fill: none;
+        stroke: #475569;
+        stroke-width: 4;
+        marker-end: url(#arrow);
+        stroke-linecap: round;
+      }
+
+      .rule {
+        stroke: #e5e7eb;
+        stroke-width: 2;
+      }
+    </style>
+  </defs>
+
+  <rect width="1600" height="950" rx="48" fill="#f7f7f5" />
+  <rect x="56" y="56" width="1488" height="838" rx="36" fill="#ffffff" stroke="#d6d3d1" stroke-width="2" />
+  <line class="rule" x1="96" y1="150" x2="1504" y2="150" />
+  <line class="rule" x1="96" y1="816" x2="1504" y2="816" />
+
+  <text class="title" x="100" y="105">Prediction Market Backtesting</text>
+  <text class="subtitle" x="100" y="132">Stable Kalshi and Polymarket research flows with PMXT raw mirroring, adapter-backed Nautilus backtests, and venue-agnostic strategy modules.</text>
+  <text class="footer" x="100" y="856">Release surface: multi-market support, position sizing, fee modeling, Polymarket L2 replay, PMXT mirror API plus worker, SQLite relay state, and publication-grade charting.</text>
+
+  <path class="edge" d="M340 386 H390" />
+  <path class="edge" d="M660 386 H730" />
+  <path class="edge" d="M660 578 H730" />
+  <path class="edge" d="M980 258 L1040 386" />
+  <path class="edge" d="M980 498 L1040 386" />
+  <path class="edge" d="M980 578 L1040 578" />
+  <path class="edge" d="M1290 386 L1330 266" />
+  <path class="edge" d="M1290 386 L1330 506" />
+
+  <rect class="node" x="90" y="340" width="250" height="92" rx="18" />
+  <text class="node-title" x="215" y="376">Kalshi + Polymarket</text>
+  <text class="node-sub" x="215" y="402">Vendor feeds and local files</text>
+
+  <rect class="node" x="390" y="340" width="270" height="92" rx="18" />
+  <text class="node-title" x="525" y="376">PMXT Mirror API</text>
+  <text class="node-sub" x="525" y="402">Raw archive serve and stats</text>
+
+  <rect class="node" x="390" y="540" width="270" height="76" rx="18" />
+  <text class="node-title" x="525" y="582">Worker + SQLite State</text>
+
+  <rect class="node" x="730" y="220" width="250" height="76" rx="18" />
+  <text class="node-title" x="855" y="262">Custom Adapters</text>
+
+  <rect class="node" x="730" y="460" width="250" height="76" rx="18" />
+  <text class="node-title" x="855" y="502">Strategy Package</text>
+  <text class="node-sub" x="855" y="526">Signal, risk, order intent</text>
+
+  <rect class="node" x="730" y="540" width="250" height="76" rx="18" />
+  <text class="node-title" x="855" y="582">Execution Model</text>
+  <text class="node-sub" x="855" y="606">Fees, limits, L2 replay</text>
+
+  <rect class="node" x="1040" y="340" width="250" height="92" rx="18" />
+  <text class="node-title" x="1165" y="376">Nautilus Backtests</text>
+  <text class="node-sub" x="1165" y="402">Multi-market runners</text>
+
+  <rect class="node" x="1040" y="540" width="250" height="76" rx="18" />
+  <text class="node-title" x="1165" y="582">Relay Observability</text>
+
+  <rect class="node" x="1330" y="220" width="210" height="92" rx="18" />
+  <text class="node-title" x="1435" y="256">Analytics + Charts</text>
+  <text class="node-sub" x="1435" y="282">Equity, drawdown, Sharpe</text>
+
+  <rect class="node" x="1330" y="460" width="210" height="92" rx="18" />
+  <text class="node-title" x="1435" y="496">Reports / Diagnostics</text>
+  <text class="node-sub" x="1435" y="522">Monthly returns, Brier</text>
+</svg>

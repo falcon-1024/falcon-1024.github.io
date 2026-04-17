@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import Script from 'next/script'
 import { Inter, Poppins } from 'next/font/google'
 import './globals.css'
 
@@ -20,8 +21,24 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
-      <body className={`${inter.className} ${poppins.variable}`}>{children}</body>
+    <html lang="en" suppressHydrationWarning>
+      <body className={`${inter.className} ${poppins.variable}`}>
+        <Script id="theme-init" strategy="beforeInteractive">
+          {`(() => {
+            try {
+              const storedTheme = window.localStorage.getItem("theme");
+              const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+              const theme = storedTheme === "light" || storedTheme === "dark"
+                ? storedTheme
+                : (prefersDark ? "dark" : "light");
+              document.documentElement.dataset.theme = theme;
+            } catch {
+              document.documentElement.dataset.theme = "light";
+            }
+          })();`}
+        </Script>
+        {children}
+      </body>
     </html>
   )
 }
