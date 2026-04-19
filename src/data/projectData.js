@@ -8,6 +8,7 @@ const projectsData = [
     detailedDescription:
       "Built FIP as a financial document intelligence service for SEC filings and related disclosures. The current release separates API and ingestion services, uses an orchestrator plus SQS-backed worker fleet for job-tracked parallel ingestion, stores metadata in PostgreSQL and vectors in Qdrant, and serves grounded question answering through FastAPI. The repo also ships Docker-based local development with Ollama, AWS-first infrastructure definitions, API demo artifacts, and repeatable portfolio evaluation workflows.",
     image: "financial-intelligence-hero.svg",
+    modalImage: "financial-intelligence.svg",
     categories: ["Generative AI", "Data Engineering"],
     stack: [
       "FastAPI",
@@ -56,6 +57,7 @@ const projectsData = [
     detailedDescription:
       "Built a healthcare analytics warehouse around an Azure target architecture and a validated Snowflake-first local mode. The current release loads checked-in sample healthcare data into a shared RAW_DATA_STAGE, materializes BRONZE, SILVER, and GOLD layers through dbt, and supports Power BI or SQL analysis over governed KPI marts. The validated path produces 21 bronze tables, 48 dbt models, 256 passing dbt tests, and 18 RBAC grant checks, with Terraform retained for the Azure target deployment path.",
     image: "healthcare-dwh-hero.svg",
+    modalImage: "healthcare-dwh.svg",
     categories: ["Data Engineering", "Analytics Engineering"],
     stack: [
       "Azure Blob Storage",
@@ -101,6 +103,7 @@ const projectsData = [
     detailedDescription:
       "Built an open-source prediction-market research framework on top of NautilusTrader with custom Kalshi and Polymarket adapters, a separate venue-agnostic strategy package, and replayable backtests that model fees, position sizing, and Polymarket L2 order-book behavior. The current public release also includes a PMXT mirror-focused relay service with raw archive access, SQLite-backed state, live observability badges, and publication-grade analytics for equity, drawdown, Sharpe, monthly returns, and cumulative Brier advantage.",
     image: "prediction-market-backtesting-hero.svg",
+    modalImage: "prediction-market-backtesting.svg",
     categories: ["Quant Systems", "Trading Infrastructure"],
     stack: [
       "Python",
@@ -136,7 +139,6 @@ const projectsData = [
         value: "uv and Makefile-based local runs, PMXT raw API plus worker, public docs, observability badges, and regression tests.",
       },
     ],
-    repoUrl: "https://github.com/falcon-1024/prediction-market-backtesting",
     duration: "2025",
   },
   {

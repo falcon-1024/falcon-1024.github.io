@@ -55,7 +55,7 @@ const ProjectModal = ({ open, onClose }) => {
         <div className="flex flex-shrink-0 overflow-hidden justify-center px-4">
           <Image
             className="block w-full max-w-[92%] rounded-xl object-contain lg:max-w-[76%]"
-            src={`/${showProj.image}`}
+            src={`/${showProj.modalImage ?? showProj.image}`}
             alt={showProj.title}
             width={1600}
             height={900}

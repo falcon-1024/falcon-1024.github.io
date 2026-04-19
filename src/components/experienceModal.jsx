@@ -1,5 +1,4 @@
 import React from "react";
-import Image from "next/image";
 import experienceData from "@/data/experienceData";
 
 const ExperienceModal = ({ open, onClose }) => {
@@ -54,16 +53,6 @@ const ExperienceModal = ({ open, onClose }) => {
             </div>
           ))}
         </div> */}
-
-        <div className="flex flex-shrink-0 overflow-hidden justify-center px-4">
-          <Image
-            className="block w-full max-w-[92%] rounded-xl object-contain lg:max-w-[76%]"
-            src={`/${showExp.companyImage}`}
-            alt={showExp.companyName}
-            width={1600}
-            height={900}
-          />
-        </div>
         <div className="grid grid-flow-row p-6 justify-center">
           <p className="section-title detail-heading m-1 px-[10%] font-bold uppercase">
             Highlights
