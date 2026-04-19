@@ -33,7 +33,7 @@ const ProjectModal = ({ open, onClose }) => {
           {/* <!-- Title --> */}
           <h5
             id="project-modal-title"
-            className="section-title m-2 text-lg lg:text-2xl min-[2300px]:text-3xl font-bold tracking-wide"
+            className="section-title card-heading m-2 font-bold tracking-wide"
           >
             {showProj.title}
           </h5>
@@ -69,7 +69,7 @@ const ProjectModal = ({ open, onClose }) => {
 
             {showProj?.systemProfile?.length > 0 && (
               <div className="mb-6">
-                <h6 className="section-title text-sm md:text-xl min-[2300px]:text-2xl font-semibold tracking-wide mb-3 uppercase">
+                <h6 className="section-title detail-heading mb-3 font-semibold uppercase">
                   System Profile
                 </h6>
                 <div className="grid gap-4">
@@ -85,7 +85,7 @@ const ProjectModal = ({ open, onClose }) => {
 
             {showProj?.stack?.length > 0 && (
               <div className="mb-6">
-                <h6 className="section-title text-sm md:text-xl min-[2300px]:text-2xl font-semibold tracking-wide mb-3 uppercase">
+                <h6 className="section-title detail-heading mb-3 font-semibold uppercase">
                   Stack
                 </h6>
                 <div className="flex flex-wrap gap-2">
@@ -103,7 +103,7 @@ const ProjectModal = ({ open, onClose }) => {
 
             {showProj?.highlights?.length > 0 && (
               <div className="mb-6">
-                <h6 className="section-title text-sm md:text-xl min-[2300px]:text-2xl font-semibold tracking-wide mb-3 uppercase">
+                <h6 className="section-title detail-heading mb-3 font-semibold uppercase">
                   Highlights
                 </h6>
                 <div className="grid grid-flow-row gap-3">

@@ -33,7 +33,7 @@ const ExperienceModal = ({ open, onClose }) => {
           {/* <!-- Title --> */}
           <h5
             id="experience-modal-title"
-            className="section-title m-2 text-lg lg:text-2xl min-[2300px]:text-3xl font-bold tracking-wide"
+            className="section-title card-heading m-2 font-bold tracking-wide"
           >
             {showExp.position}
           </h5>
@@ -65,7 +65,7 @@ const ExperienceModal = ({ open, onClose }) => {
           />
         </div>
         <div className="grid grid-flow-row p-6 justify-center">
-          <p className="section-title font-bold text-md md:text-xl min-[2300px]:text-2xl m-1 px-[10%]">
+          <p className="section-title detail-heading m-1 px-[10%] font-bold uppercase">
             Highlights
           </p>
           {showExp.responsibilities.map((res, idx) => (

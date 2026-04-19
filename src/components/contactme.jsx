@@ -9,12 +9,12 @@ const ContactMe = () => {
     <section id="contact-me">
       <RevealBlock className="flex min-h-screen w-full flex-col items-center justify-center px-5 py-24 md:px-10 md:py-28">
         <div className="mb-6 flex w-full max-w-5xl justify-center">
-          <h1 className="section-title text-3xl md:text-6xl min-[2300px]:text-9xl font-light mb-5">
+          <h1 className="section-title section-heading mb-5 font-light">
             CONTACT ME
           </h1>
         </div>
         <div className="surface-strong w-full max-w-5xl rounded-3xl px-6 py-8 md:px-10 md:py-10">
-          <h2 className="section-copy text-xl md:text-3xl min-[2300px]:text-6xl font-light text-center mb-10 leading-relaxed">
+          <h2 className="section-copy section-lead mb-10 text-center font-light">
             The best entry point depends on what you want to inspect. GitHub is
             where the implementation choices live. LinkedIn is the clean
             timeline. If the role sits around data platforms, retrieval
@@ -34,7 +34,7 @@ const ContactMe = () => {
                   className="section-muted text-3xl lg:text-5xl"
                 />
               </a>
-              <p className="section-muted mt-3 text-xs md:text-sm uppercase tracking-[0.24em]">
+              <p className="section-muted section-eyebrow mt-3">
                 Build Decisions
               </p>
             </div>
@@ -50,7 +50,7 @@ const ContactMe = () => {
                   className="section-muted text-3xl lg:text-5xl"
                 />
               </a>
-              <p className="section-muted mt-3 text-xs md:text-sm uppercase tracking-[0.24em]">
+              <p className="section-muted section-eyebrow mt-3">
                 Career Timeline
               </p>
             </div>
@@ -61,12 +61,12 @@ const ContactMe = () => {
                   className="section-muted text-3xl lg:text-5xl"
                 />
               </div>
-              <p className="section-muted mt-3 text-xs md:text-sm uppercase tracking-[0.24em]">
+              <p className="section-muted section-eyebrow mt-3">
                 Direct Reach
               </p>
             </div>
           </div>
-          <p className="section-title mt-8 text-center text-lg md:text-2xl min-[2300px]:text-5xl font-medium tracking-wide">
+          <p className="section-title card-heading mt-8 text-center font-medium tracking-wide">
             abhi--patel [at] outlook [dot] com
           </p>
         </div>

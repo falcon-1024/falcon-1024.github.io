@@ -1,13 +1,19 @@
 import type { Metadata } from 'next'
 import Script from 'next/script'
-import { Inter, Poppins } from 'next/font/google'
+import { Manrope, Space_Grotesk } from 'next/font/google'
 import './globals.css'
 
-const inter = Inter({ subsets: ['latin'] })
+const manrope = Manrope({
+  subsets: ['latin'],
+  weight: ['400', '500', '600', '700', '800'],
+  variable: '--font-body',
+})
 
-const poppins = Poppins({ subsets: ['latin'],
-weight: ['400','500', '600', '700', '800', '900'],
-variable: '--font-poppins' })
+const spaceGrotesk = Space_Grotesk({
+  subsets: ['latin'],
+  weight: ['400', '500', '700'],
+  variable: '--font-display',
+})
 
 export const metadata: Metadata = {
   title: 'Abhi Patel',
@@ -22,7 +28,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={`${inter.className} ${poppins.variable}`}>
+      <body className={`${manrope.variable} ${spaceGrotesk.variable}`}>
         <Script id="theme-init" strategy="beforeInteractive">
           {`(() => {
             try {

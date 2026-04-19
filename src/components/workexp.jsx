@@ -18,7 +18,7 @@ const WorkExperience = () => {
     <section id="work-exp">
       <RevealBlock className="flex min-h-screen w-full flex-col items-center justify-center px-5 py-24 md:px-10 md:py-28">
         <div className="mb-5 flex w-full max-w-6xl justify-center">
-          <h1 className="section-title text-3xl md:text-6xl min-[2300px]:text-9xl font-light">
+          <h1 className="section-title section-heading font-light">
             EXPERIENCE
           </h1>
         </div>
@@ -35,7 +35,7 @@ const WorkExperience = () => {
         </div>
 
         <div className="mb-4 w-full max-w-6xl">
-          <h2 className="section-muted text-sm md:text-base min-[2300px]:text-3xl font-medium uppercase tracking-[0.28em]">
+          <h2 className="section-muted section-eyebrow">
             Earlier Experience
           </h2>
         </div>
@@ -96,11 +96,11 @@ const ExperienceCard = ({ exp, openExpModal, setOpenExpModal, compact = false })
 
     <div className="flex flex-1 flex-col items-start p-6 text-left">
       {badge && (
-        <p className="section-muted text-xs md:text-sm min-[2300px]:text-xl uppercase tracking-[0.28em] mb-3">
+        <p className="section-muted section-eyebrow mb-3">
           {badge}
         </p>
       )}
-      <h5 className="section-title mb-2 text-lg md:text-2xl min-[2300px]:text-5xl font-bold tracking-wide">
+      <h5 className="section-title card-heading mb-2 font-bold tracking-wide">
         {exp.position}
       </h5>
       {exp.companyUrl ? (

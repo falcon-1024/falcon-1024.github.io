@@ -7,7 +7,7 @@ const Skills = () => {
     <section id="skills">
       <RevealBlock className="flex min-h-screen w-full flex-col items-center justify-center px-5 py-24 md:px-10 md:py-28">
         <div className="mb-6 flex w-full max-w-6xl justify-center">
-          <h1 className="section-title text-3xl md:text-6xl min-[2300px]:text-9xl font-light">
+          <h1 className="section-title section-heading font-light">
             SKILLS
           </h1>
         </div>
@@ -17,7 +17,7 @@ const Skills = () => {
               key={group.title}
               className="surface-card card-hover rounded-2xl p-6"
             >
-              <h2 className="section-title text-xl md:text-3xl min-[2300px]:text-4xl font-semibold mb-4">
+              <h2 className="section-title card-heading mb-4 font-semibold">
                 {group.title}
               </h2>
               <div className="grid gap-3 md:grid-cols-2">

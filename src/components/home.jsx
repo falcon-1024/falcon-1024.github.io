@@ -7,13 +7,13 @@ const Home = () => {
       <RevealBlock className="flex min-h-screen w-full items-center justify-center px-5 pb-16 pt-28 md:px-10 md:pb-20 md:pt-32">
         <div className="w-full max-w-5xl">
           <div>
-            <p className="section-muted mb-4 text-xs uppercase tracking-[0.34em] md:text-sm min-[2300px]:text-xl">
+            <p className="section-muted section-eyebrow mb-4">
               Data Infrastructure, Retrieval Systems, and Applied AI
             </p>
-            <h1 className="section-title mb-4 text-4xl font-light md:text-7xl min-[2300px]:text-9xl">
+            <h1 className="section-title hero-heading mb-4 font-light">
               Abhi Patel
             </h1>
-            <h2 className="section-title mb-6 text-2xl font-medium leading-tight md:text-5xl min-[2300px]:text-7xl">
+            <h2 className="section-title hero-subheading mb-6 font-medium">
               Data Engineer. AI Engineer.
             </h2>
 

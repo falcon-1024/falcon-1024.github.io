@@ -8,7 +8,7 @@ const Education = () => {
     <section id="education">
       <RevealBlock className="flex min-h-screen w-full flex-col items-center justify-center px-5 py-24 md:px-10 md:py-28">
         <div className="mb-6 flex w-full max-w-6xl justify-center">
-          <h1 className="section-title text-3xl md:text-6xl min-[2300px]:text-9xl font-light mb-5">
+          <h1 className="section-title section-heading mb-5 font-light">
             EDUCATION
           </h1>
         </div>
@@ -26,7 +26,7 @@ const Education = () => {
 
             {/* <!-- Card body --> */}
             <div className="p-6">
-              <p className="section-title font-bold tracking-wide text-base md:text-2xl min-[2300px]:text-5xl mb-2">
+              <p className="section-title card-heading mb-2 font-bold tracking-wide">
                 Master of Applied Computing
               </p>
               <a
@@ -63,7 +63,7 @@ const Education = () => {
 
             {/* <!-- Card body --> */}
             <div className="p-6">
-              <p className="section-title font-bold tracking-wide text-base md:text-2xl min-[2300px]:text-5xl mb-2">
+              <p className="section-title card-heading mb-2 font-bold tracking-wide">
                 Bachelor in Information and Communication Technology
               </p>
               <a

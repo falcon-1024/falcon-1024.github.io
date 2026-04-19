@@ -24,13 +24,13 @@ const Project = () => {
     <section id="projects">
       <RevealBlock className="flex min-h-screen w-full flex-col items-center px-5 py-24 md:px-10 md:py-28">
         <div className="mb-5 flex w-full max-w-6xl justify-center">
-          <h1 className="section-title text-3xl md:text-6xl min-[2300px]:text-9xl font-light">
+          <h1 className="section-title section-heading font-light">
             PROJECTS
           </h1>
         </div>
 
         <div className="mb-8 w-full max-w-6xl">
-          <h2 className="section-muted text-sm md:text-base min-[2300px]:text-3xl font-medium uppercase tracking-[0.28em] mb-3">
+          <h2 className="section-muted section-eyebrow mb-3">
             Featured Projects
           </h2>
         </div>
@@ -66,7 +66,7 @@ const Project = () => {
               id="additional-projects"
               className="mb-8 w-full max-w-6xl"
             >
-              <h2 className="section-muted text-sm md:text-base min-[2300px]:text-3xl font-medium uppercase tracking-[0.28em] mb-3">
+              <h2 className="section-muted section-eyebrow mb-3">
                 Additional Projects
               </h2>
             </div>
@@ -126,7 +126,7 @@ const Tro = ({ prj, openPrjModal, setOpenPrjModal, compact = false }) => (
         ))}
       </div>
       {/* <!-- Title --> */}
-      <h5 className="section-title mb-2 text-xl font-bold tracking-wide">
+      <h5 className="section-title card-heading mb-2 font-bold tracking-wide">
         {prj.title}
       </h5>
       <p className="section-copy text-base leading-relaxed md:text-xl min-[2300px]:text-2xl">
