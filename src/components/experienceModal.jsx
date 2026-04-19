@@ -54,6 +54,21 @@ const ExperienceModal = ({ open, onClose }) => {
           ))}
         </div> */}
         <div className="grid grid-flow-row p-6 justify-center">
+          {showExp.roleProfile?.length > 0 && (
+            <div className="mb-6 px-[10%]">
+              <p className="section-title detail-heading m-1 font-bold uppercase">
+                Role Profile
+              </p>
+              <div className="grid gap-4 mt-3">
+                {showExp.roleProfile.map((detail) => (
+                  <div key={detail.label} className="metric-kv">
+                    <p className="metric-label">{detail.label}</p>
+                    <p className="metric-value">{detail.value}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+          )}
           <p className="section-title detail-heading m-1 px-[10%] font-bold uppercase">
             Highlights
           </p>
